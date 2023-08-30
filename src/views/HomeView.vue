@@ -1,7 +1,11 @@
 <script>
 import { defineComponent } from 'vue'
+import Footer from '../components/Footer.vue';
 
 export default defineComponent({
+  components :{
+    Footer
+  },
   data(){
     return{
 
@@ -10,7 +14,5 @@ export default defineComponent({
 })
 </script>
 <template>
-  <div class="text-red-500"> 
-    This is home
-  </div>
+  <Footer />
 </template>
