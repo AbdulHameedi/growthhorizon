@@ -2,12 +2,14 @@
 import { defineComponent } from 'vue'
 import Footer from '../components/Footer.vue';
 import ScrollToTop from '../components/ScrollToTop.vue';
+import Navbar from '../components/Navbar.vue';
 
 export default defineComponent({
   components :{
     Footer,
-    ScrollToTop
-  },
+    ScrollToTop,
+    Navbar
+},
   data(){
     return{
 
@@ -16,6 +18,7 @@ export default defineComponent({
 })
 </script>
 <template>
+  <Navbar />
   <ScrollToTop />
   <Footer />
 </template>
