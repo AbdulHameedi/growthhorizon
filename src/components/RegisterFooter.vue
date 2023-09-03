@@ -6,7 +6,7 @@ export default defineComponent({
 })
 </script>
 <template>
-    <div class="px-[5.5rem] py-[3rem] max-[1312px]:px-[1rem]">
+    <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out" class="px-[5.5rem] py-[3rem] max-[1312px]:px-[1rem]">
         <div class="px-10 max-[1136px]:py-8 max-[1136px]:px-4 rounded-md bg-[url('../assets/bg-section-1.webp')] w-full flex justify-between items-center  max-[1136px]:flex-col  max-[1136px]:items-start  max-[1136px]:gap-8">
             <div class="flex items-center gap-6 max-[595px]:flex-col max-[595px]:items-start">
                 <div class="flex items-center">

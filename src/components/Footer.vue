@@ -10,7 +10,7 @@ export default defineComponent({
 })
 </script>
 <template>
-    <div>
+    <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out">
         <div class="bg-[#0D0D3F] px-[5.5rem] max-[1312px]:px-[1rem]"> 
           <div class="flex justify-between items-center py-10 border-b border-gray-700 max-[892px]:justify-center">
             <div class="flex items-center gap-4 max-[892px]:hidden">

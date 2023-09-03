@@ -6,7 +6,7 @@ export default defineComponent({
 })
 </script>
 <template>
-    <div class="bg-white px-20 py-[9rem] max-[1312px]:px-[1rem]">
+    <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out" class="bg-white px-20 py-[9rem] max-[1312px]:px-[1rem]">
         <div class="flex flex-col items-center justify-center mb-12">
             <img class="w-[18px] h-[18px]" src="../assets/logo.svg" alt="">
             <p class="text-gray-500 font-semibold text-lg mb-3 text-center">RECENT NEWS FEED</p>
