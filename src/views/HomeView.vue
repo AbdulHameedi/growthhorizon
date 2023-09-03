@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar.vue';
 import RegisterFooter from '../components/RegisterFooter.vue';
 import Blog from '../components/Blog.vue';
 import Contact from '../components/Contact.vue';
+import Ratings from '../components/Ratings.vue';
 
 export default defineComponent({
   components :{
@@ -14,13 +15,15 @@ export default defineComponent({
     Navbar,
     RegisterFooter,
     Blog,
-    Contact
+    Contact,
+    Ratings
 },
 })
 </script>
 <template>
   <Navbar />
   <ScrollToTop />
+  <Ratings />
   <Contact />
   <Blog />
   <RegisterFooter />
