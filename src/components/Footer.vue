@@ -49,7 +49,7 @@ export default defineComponent({
                 </div>
             </div>
             <div>
-              <p class="text-white text-2xl font-semibold mb-4">Contact</p>
+              <p class="text-white text-2xl font-semibold mb-4">Gallery</p>
               <div class="grid grid-cols-3 gap-2">
                 <img class="rounded-md" src="../assets/image-footer-3.jpg" alt="">
                 <img class="rounded-md" src="../assets/news04-370x320.webp" alt="">

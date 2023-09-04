@@ -5,6 +5,9 @@ import ScrollToTop from '../components/ScrollToTop.vue';
 import Navbar from '../components/Navbar.vue';
 import RegisterFooter from '../components/RegisterFooter.vue';
 import Blog from '../components/Blog.vue';
+import Contact from '../components/Contact.vue';
+import Ratings from '../components/Ratings.vue';
+import Testimonials from '../components/Testimonials.vue';
 import HeroSection from '../components/HeroSection.vue';
 
 export default defineComponent({
@@ -14,6 +17,9 @@ export default defineComponent({
     Navbar,
     RegisterFooter,
     Blog,
+    Contact,
+    Ratings,
+    Testimonials,
     HeroSection
 },
 })
@@ -22,6 +28,9 @@ export default defineComponent({
   <Navbar />
   <HeroSection />
   <ScrollToTop />
+  <Testimonials />
+  <Ratings />
+  <Contact />
   <Blog />
   <RegisterFooter />
   <Footer />
