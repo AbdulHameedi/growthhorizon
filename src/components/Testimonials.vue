@@ -10,21 +10,18 @@ export default defineComponent({
                     "name": 'Sanni Hammed',
                     "occupation": 'Youtuber',
                     "speech": 'Transforming the way we engage with online content has been a game-changer, and Growth Horizon has made it not only possible but exceptionally rewarding.',
-                    "image": '/./src/assets/hammed.jpg'
                 },
                 {
                     "id": 1,
                     "name": 'Luqman Abdulrahman',
                     "occupation": 'Software Developer',
                     "speech": 'The platform user-friendly interface and diverse engagement options have not only made it easy but exciting to participate in content promotion and earnings.',
-                    "image": '/./src/assets/luqman.png'
                 },
                 {
                     "id": 3,
                     "name": 'Taiwo Balkis',
                     "occupation": 'Content Creator',
                     "speech": 'The Growth Horizon experience has been nothing short of transformative, and it has empowered me to shape my own path to financial prosperity through digital engagement',
-                    "image": "/./src/assets/balkis.jpg"
                 },                
             ],
             currentTestimony: 0
@@ -38,7 +35,7 @@ export default defineComponent({
             <img class="rounded-[50%] max-[425px]:w-[150px] max-[610px]:w-[300px] absolute top-[10%] left-[20%] z-20" src="../assets/a1.webp" alt="">
             <img class="rounded-[50%] max-[425px]:w-[100px] max-[610px]:w-[200px] absolute left-[50%] top-0" src="../assets/a2.webp" alt="">
             <img class="rounded-[50%] max-[425px]:w-[100px] absolute top-0 left-[6%]" src="../assets/a3.webp" alt="">
-            <img class="rounded-[50%] max-[425px]:w-[90px] absolute left-[65%] z-30 bottom-[20%]" src="../assets/a4.webp" alt="">
+            <img class="rounded-[50%] max-[425px]:w-[90px] absolute left-[65%] max-[425px]:left-[43%] max-[425px]:bottom-[24%] z-30 bottom-[20%]" src="../assets/a4.webp" alt="">
         </div>
         <div class="px-20 pl-10 max-[1312px]:px-[1rem]">
             <div class="mb-8">
@@ -52,7 +49,9 @@ export default defineComponent({
                     <div class="flex justify-between items-center max-[405px]:flex-col max-[405px]:justify-between max-[405px]:gap-3">
                         <div class="flex gap-6 items-center">
                             <div class="border border-[5px] overflow-hidden border-[#28B79A] rounded-[50%] w-[105px] h-[105px]">
-                                <img class="rounded-[50%] w-full h-full  border border-white border-[4px]" :src="testimony.image" alt="">
+                                <img class="rounded-[50%] w-full h-full  border border-white border-[4px]" src="../assets/hammed.jpg" alt="" v-if="currentTestimony == 0">
+                                <img class="rounded-[50%] w-full h-full  border border-white border-[4px]" src="../assets/luqman.png" alt="" v-if="currentTestimony == 1">
+                                <img class="rounded-[50%] w-full h-full  border border-white border-[4px]" src="../assets/balkis.jpg" alt="" v-if="currentTestimony == 2">
                             </div>
                             <div>
                                 <p class="text-[#0D0D3F] font-bold text-xl">{{ testimony.name }}</p>
