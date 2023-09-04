@@ -83,8 +83,9 @@
         </div>
     </header>
 
+
     <!-- cover -->
-    <div v-show="showNavs" @click="showNavs = false" class="lg:hidden w-full h-screen bg-black opacity-50 fixed top-0"></div>
+    <div v-show="showNavs" @click="showNavs = false" class="lg:hidden w-full h-screen bg-black opacity-50 fixed top-0 z-[900]"></div>
 </template>
 
 <script>
@@ -171,4 +172,9 @@ this.showNavs = false            }
 .dropdown:hover .dropdown-contents{
     display: block !important;
 } */
+
+.carousel{
+    /* width: 200%; */
+    /* display: flex; */
+}
 </style>
