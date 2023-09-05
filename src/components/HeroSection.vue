@@ -2,7 +2,7 @@
     <div class="carousel">
         <div class=" h-screen">
             <div class="relative" v-for="(section, index) in heroSection">
-               <div v-show="currentIndex === index" class="carousel-item h-screen bg-center bg-cover lg:px-16 md:px-8 px-2 flex flex-col gap-6 justify-center"  :class="currentIndex === 0 ? 'bg-[url(src/assets/bg-image-1.jpeg)]' : currentIndex === 1 ? 'bg-[url(src/assets/bg-image-2.jpeg)]' : 'bg-white'">
+               <div v-show="currentIndex === index" class="carousel-item h-screen bg-center bg-cover lg:px-16 md:px-8 px-2 flex flex-col gap-6 justify-center"  :class="currentIndex === 0 ? 'bg-[url(../assets/bg-image-1.jpeg)]' : currentIndex === 1 ? 'bg-[url(../assets/bg-image-2.jpeg)]' : 'bg-white'">
                  <div class="space-y-2">
                     <p class="text-white font-semibold lg:text-6xl md:text-4xl text-md bg-[#2E3BA6] p-4 rounded-xl w-fit">{{ section.firstHeaderContent }}</p>
                     <p class="text-white font-semibold lg:text-6xl md:text-4xl text-md bg-[#2E3BA6] p-4 rounded-xl w-fit">{{ section.lastHeaderContent }}</p>
