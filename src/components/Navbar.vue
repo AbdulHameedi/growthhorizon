@@ -34,7 +34,7 @@
                 <p class="text-[#0D0D3F] text-xl font-bold">GrowthHorizon</p>
             </div>
     
-            <nav class="lg:flex lg:static fixed top-0 lg:bg-transparent bg-[#0D0D3F] lg:w-fit w-[90%] lg:h-fit h-screen lg:p-0 md:p-16 p-6 gap-6 space-y-6 lg:overflow-hidden overflow-y-auto z-[999] transition-right duration-700" :class="!showNavs ? 'right-[-1500px]' : 'right-0'">
+            <nav class="lg:flex items-center lg:static fixed top-0 lg:bg-transparent bg-[#0D0D3F] lg:w-fit w-[90%] lg:h-full h-screen lg:p-0 md:p-16 p-6 gap-6 space-y-6 lg:overflow-hidden overflow-y-auto z-[999] transition-right duration-700" :class="!showNavs ? 'right-[-1500px]' : 'right-0'">
                 <div @click="showNavs = false" class="lg:hidden block absolute top-6 right-6 w-fit cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="white" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
                 </div>
