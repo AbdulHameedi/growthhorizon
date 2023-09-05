@@ -57,7 +57,7 @@
                 <p @click="GetInTouchActive()" class="lg:border-none lg:p-0 py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg lg:hover:text-[#0D0D3F]" :class="onGetInTouchActive ? 'lg:text-[#0D0D3F] text-white' : 'text-white lg:text-[#7F7F88]'">Get in touch</p>
 
                 <div class="lg:hidden flex gap-4 items-center">
-                    <p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-white hover:text-[#0D0D3F] py-2 md:px-6 px-4 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p>
+                    <router-link to="/signup"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-white hover:text-[#0D0D3F] py-2 md:px-6 px-4 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p></router-link>
                     <p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-white hover:text-[#0D0D3F] py-2 md:px-6 px-4 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign in</p>
                 </div>
 
@@ -72,7 +72,7 @@
             </nav>
     
             <div class="hidden md:flex gap-4 items-center">
-                <p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-transparent hover:text-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p>
+                <router-link to="/signup"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-transparent hover:text-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p></router-link>
                 <p class="cursor-pointer border border-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold hover:bg-[#0D0D3F] hover:text-white">Sign in</p>
             </div>
             <!-- hamburger icon -->
