@@ -14,14 +14,14 @@ export default defineComponent({
             </div>
             <p class="text-[#28B79A]">Create an account</p>
         </div>
-        <div class="flex justify-between flex-col bg-white shadow-md rounded-md w-[350px] py-8 h-[500px]">
+        <div class="flex justify-between flex-col bg-white shadow-md rounded-md w-[350px] py-8 h-[520px]">
             <div>
                 <div class="px-4 items-center gap-2 mb-4 hidden  max-[968px]:flex">
-                    <img class="w-[20px] h-[20px]" src="../assets/logo.svg" alt="">
-                    <p class="text-sm text-[#0D0D3F] font-semibold">Growth Horizon</p>
+                    <img class="w-[40px] h-[40px]" src="../assets/logo.svg" alt="">
+                    <p class="text-md text-[#0D0D3F] font-semibold">Growth Horizon</p>
                 </div>
                 <p class="text-2xl font-semibold text-[#0D0D3F] mb-2 px-8 max-[968px]:px-4">Select an account</p>
-                <div class="flex items-center mb-4 gap-1 text-red500 text-[#28B79A] px-8 max-[968px]:px-4 cursor-pointer">
+                <div class="flex items-center mb-8 gap-1 text-red500 text-[#28B79A] px-8 max-[968px]:px-4 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 256 256"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm-8-80V80a8 8 0 0 1 16 0v56a8 8 0 0 1-16 0Zm20 36a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z"/></svg>
                     <p class="text-sm">Read more about the process</p>
                 </div>
@@ -55,7 +55,7 @@ export default defineComponent({
                     </div>
                 </div>
             </div>
-            <div class="px-8 max-[968px]:px-4 border-t py-4">
+            <div class="px-8 max-[968px]:px-4 py-4">
                 <p class="text-[#0D0D3F] text-sm font-semibold">Already own an account? <span class="text-[#28B79A] cursor-pointer hover:underline">Sign in</span></p>
             </div>
         </div>
