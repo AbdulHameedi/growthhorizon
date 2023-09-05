@@ -36,7 +36,7 @@
             <div class="texts absolute space-y-4 top-[70px] left-0 right-0 mx-auto w-[200px] text-center z-[500]">
               <div class="flex items-center gap-6">
                 <svg class="summary-text hidden" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="white" d="M8 2H1l8.26 11.014L1.45 22H4.1l6.388-7.349L16 22h7l-8.608-11.478L21.8 2h-2.65l-5.986 6.886L8 2Zm9 18L5 4h2l12 16h-2Z"/></svg>
-                <p class="text-white text-xl font-bold">Boost your page</p>
+                <p class="text-white text-xl font-bold">Expand your Audience</p>
               </div>
               <p class="summary-text text-gray-300 hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, accusamus.</p>
             </div>
@@ -106,14 +106,14 @@
             return{
                 heroSection: [
                     {
-                        firstHeaderContent: 'Increase your',
-                        lastHeaderContent: 'Viewers/Subscribers/Customers',
+                        firstHeaderContent: 'Enhance your',
+                        lastHeaderContent: 'Audience / Subscribers / Customers',
                         paragraph: 'We are trusted and professional earning company',
                         actionButton: "Let's get started"
                     },
                     {
-                        firstHeaderContent: 'Increase your',
-                        lastHeaderContent: 'Income',
+                        firstHeaderContent: 'Amplify your',
+                        lastHeaderContent: 'Earnings',  
                         paragraph: 'We are trusted and professional  earning company',
                         actionButton: "Let's get started"
                     }
