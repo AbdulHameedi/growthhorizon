@@ -1,12 +1,20 @@
 <script>
 import { defineComponent } from 'vue'
+import UserAccount from './UserAccount.vue';
 
 export default defineComponent({
-
+    components: {
+        UserAccount
+    },
+    data(){
+        return{
+            useraccount: false
+        }
+    }
 })
 </script>
 <template>
-    <div class="signup-container w-full h-screen flex justify-between px-40  max-[968px]:px-4 items-center max-[968px]:justify-center overflow-y-auto">
+    <div v-if="useraccount == false" class="signup-container w-full h-screen flex justify-between px-40  max-[968px]:px-4 items-center max-[968px]:justify-center overflow-y-auto">
         <div class="max-[968px]:hidden">
             <div class="flex items-center gap-2">
                 <img class="w-[60px] h-[60px]" src="../assets/logo.svg" alt="">
@@ -14,7 +22,7 @@ export default defineComponent({
             </div>
             <p class="text-[#28B79A]">Create an account</p>
         </div>
-        <div class="flex justify-between flex-col bg-white shadow-md rounded-md w-[350px] py-8 h-[520px]">
+        <div class="flex justify-between flex-col bg-white shadow-md rounded-md w-[350px] py-8 h-[520px]" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out">
             <div>
                 <div class="px-4 items-center gap-2 mb-4 hidden  max-[968px]:flex">
                     <img class="w-[40px] h-[40px]" src="../assets/logo.svg" alt="">
@@ -26,7 +34,7 @@ export default defineComponent({
                     <p class="text-sm">Read more about the process</p>
                 </div>
                 <div class="flex flex-col">
-                    <div class="border-b py-4 hover:bg-gray-200 cursor-pointer">
+                    <div class="border-b py-4 hover:bg-gray-200 cursor-pointer" @click="useraccount = true">
                         <div class="flex justify-between items-center px-8 max-[968px]:px-4">
                             <div class="flex items-center gap-1">
                                 <svg class="text-[#28B79A]" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.1.775-3.913T4.9 4.9L12 12V2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
@@ -60,6 +68,7 @@ export default defineComponent({
             </div>
         </div>
     </div>
+    <UserAccount v-if="useraccount == true" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out"/>
 </template>
 <style>
     .signup-container{
