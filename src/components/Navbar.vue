@@ -173,8 +173,4 @@ this.showNavs = false            }
     display: block !important;
 } */
 
-.carousel{
-    /* width: 200%; */
-    /* display: flex; */
-}
 </style>

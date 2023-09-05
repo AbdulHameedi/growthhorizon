@@ -22,7 +22,7 @@
         </div>
 
         <div class="grid lg:grid-cols-3 md:grid-cols-2 w-fit mx-auto gap-6">
-          <div class="about-summary cursor-pointer bg-[url(src/assets/about-summary-1.webp)] bg-center bg-cover h-[260px] w-[370px] mt-[-30px] mx-auto relative overflow-hidden rounded-lg">
+          <div class="about-summary cursor-pointer bg-[url(../assets/about-summary-1.webp)] bg-center bg-cover h-[260px] w-[370px] mt-[-30px] mx-auto relative overflow-hidden rounded-lg">
 
 
 
@@ -46,7 +46,7 @@
           </div> -->
           </div>
 
-          <div class="about-summary cursor-pointer bg-[url(src/assets/about-summary-2.jpeg)] bg-center bg-cover h-[260px] w-[370px] md:mt-[-30px] mx-auto relative overflow-hidden rounded-lg">
+          <div class="about-summary cursor-pointer bg-[url(../assets/about-summary-2.jpeg)] bg-center bg-cover h-[260px] w-[370px] md:mt-[-30px] mx-auto relative overflow-hidden rounded-lg">
 
 
 
@@ -70,7 +70,7 @@
           </div> -->
           </div>
 
-          <div class="about-summary cursor-pointer bg-[url(src/assets/about-summary-3.webp)] bg-center bg-cover h-[260px] w-[370px] lg:mt-[-30px] mx-auto relative overflow-hidden rounded-lg">
+          <div class="about-summary cursor-pointer bg-[url(../assets/about-summary-3.webp)] bg-center bg-cover h-[260px] w-[370px] lg:mt-[-30px] mx-auto relative overflow-hidden rounded-lg">
 
 
 
