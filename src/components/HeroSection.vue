@@ -106,8 +106,8 @@
             return{
                 heroSection: [
                     {
-                        firstHeaderContent: 'Enhance your',
-                        lastHeaderContent: 'Audience / Subscribers / Customers',
+                        firstHeaderContent: 'Grow your',
+                        lastHeaderContent: 'Audience | Subscribers | Customers',
                         paragraph: 'We are trusted and professional earning company',
                         actionButton: "Let's get started"
                     },
