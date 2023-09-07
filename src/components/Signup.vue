@@ -1,14 +1,23 @@
 <script>
 import { defineComponent } from 'vue'
 import UserAccount from './UserAccount.vue';
+import AdvertiserAccount from './AdvertiserAccount.vue'
 
 export default defineComponent({
     components: {
-        UserAccount
+        UserAccount,
+        AdvertiserAccount
     },
     data(){
         return{
-            useraccount: false
+            useraccount: false,
+            isComponent: 'UserAccount'
+        }
+    },
+    methods: {
+        AdsFunc(){
+            this.useraccount = true
+            this.isComponent = 'AdvertiserAccount'
         }
     }
 })
@@ -43,11 +52,11 @@ export default defineComponent({
                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887L14.475 12Z"/></svg> 
                         </div>
                     </div>
-                    <div class="border-b py-4 hover:bg-gray-200 cursor-pointer">
+                    <div class="border-b py-4 hover:bg-gray-200 cursor-pointer" @click="AdsFunc">
                         <div class="flex justify-between items-center px-8 max-[968px]:px-4">
                             <div class="flex items-center gap-1">
-                                <svg class="text-[#28B79A]" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.1.775-3.913T4.9 4.9L12 12V2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
-                                <p>User Account <small class="text-[#28B79A]">Premium*</small></p>
+                                <svg class="text-[#0D0D3F]" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.1.775-3.913T4.9 4.9L12 12V2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
+                                <p>Advertiser</p>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887L14.475 12Z"/></svg> 
                         </div>
@@ -55,8 +64,8 @@ export default defineComponent({
                     <div class="border-b py-4 hover:bg-gray-200 cursor-pointer">
                         <div class="flex justify-between items-center px-8 max-[968px]:px-4">
                             <div class="flex items-center gap-1">
-                                <svg class="text-[#0D0D3F]" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.1.775-3.913T4.9 4.9L12 12V2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
-                                <p>Advertiser</p>
+                                <svg class="text-[#28B79A]" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.1.775-3.913T4.9 4.9L12 12V2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
+                                <p>User Account <small class="text-[#28B79A]">Premium*</small></p>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path fill="currentColor" d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887L14.475 12Z"/></svg> 
                         </div>
@@ -68,7 +77,7 @@ export default defineComponent({
             </div>
         </div>
     </div>
-    <UserAccount v-if="useraccount == true" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out"/>
+    <component :is="isComponent" v-if="useraccount == true" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out"></component>
 </template>
 <style>
     .signup-container{
