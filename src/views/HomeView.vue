@@ -9,6 +9,9 @@ import Contact from '../components/Contact.vue';
 import Ratings from '../components/Ratings.vue';
 import Testimonials from '../components/Testimonials.vue';
 import HeroSection from '../components/HeroSection.vue';
+import AboutCompany from '../components/AboutCompany.vue';
+import OurOffer from '../components/OurOffer.vue';
+import OurVisionAndMission from '../components/OurVisionAndMission.vue';
 
 export default defineComponent({
   components :{
@@ -20,13 +23,19 @@ export default defineComponent({
     Contact,
     Ratings,
     Testimonials,
-    HeroSection
+    HeroSection,
+    AboutCompany,
+    OurOffer,
+    OurVisionAndMission
 },
 })
 </script>
 <template>
   <Navbar />
   <HeroSection />
+  <AboutCompany />
+  <OurOffer />
+  <OurVisionAndMission />
   <ScrollToTop />
   <Testimonials />
   <Ratings />
