@@ -18,15 +18,23 @@ export default defineComponent({
             paymentMethod: '',
             accountName: '',
             transactionDate: '',
+            requiredField: false
 
         }
     },
     methods: {
         nextPosition(){
             this.fieldPosition++
+            if(this.fieldPosition == 4){
+                if(this.name == '' || this.email == '' || this.confirmEmail !== this.email || this.businessType == '' || this.tel == '' || this.address == '' || this.engagementType == '' || this.link == '' || this.reachGoal == '' || this.paymentMethod == '' || this.accountName == '' || this.transactionDate == ''){
+                    this.fieldPosition--
+                    this.requiredField = true
+                }
+            }
         },
         prevPosition(){
             this.fieldPosition--
+            this.requiredField = false
         }
     }
 })
@@ -35,6 +43,7 @@ export default defineComponent({
     <div class="relative h-screen bg-[url('../assets/guy.webp')] w-full flex justify-end bg-no-repeat bg-left overflow-y-auto">
         <p class="overlay absolute h-screen bg-gradient-to-r from-[#2E3BA6] to-white top-0 left-0 w-full opacity-60"></p>
         <div class="bg-white shadow-xl p-8 w-fit relative z-20 overflow-y-auto max-[399px]:p-4" v-if="fieldPosition < 5">
+            <p v-if="requiredField" class="absolute text-center top-0 w-full bg-red-300 text-white left-[-1px]">Fill in the required fields</p>
             <p class="mb-7 text-[#0D0D3F] text-3xl font-bold">Sign Up</p>
             <div class="flex items-center gap-3 mb-10 justify-between max-[399px]:gap-2">
                 <div class="flex flex-col items-center gap-2 relative">
@@ -204,8 +213,8 @@ export default defineComponent({
             <div class="flex items-center flex-col gap-5 bg-white shadow-xl p-4 py-[4rem] rounded-md">
                 <p class="text-[#28B79A] border-[3px] rounded-[50%] p-2 border-l-[#28B79A] border-t-[#28B79A] border-b-[#28B79A] w-fit"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
                 <p class="text-4xl text-[#0D0D3F] font-semibold">Thank you</p>
-                <p class="text-center max-w-[420px] text-[#0D0D3F font-semibold">A mail will be sent to your email address. Please ensure to check the inbox or the spam box incase you can't find it in your inbox</p>
-                <p class="w-[180px] text-center p-3 bg-[#28B79A] text-white rounded-sm hover:bg-[#15c4a1] cursor-pointer">Return to homepage</p>
+                <p class="text-center max-w-[420px] text-[#0D0D3F font-semibold">A mail will be sent to your email address. Please ensure to checkmthe spam box incase you can't find it in your inbox</p>
+                <router-link to="/"><p class="w-[180px] text-center p-3 bg-[#28B79A] text-white rounded-sm hover:bg-[#15c4a1] cursor-pointer">Return to homepage</p></router-link>
             </div>
         </div>
     </div>
