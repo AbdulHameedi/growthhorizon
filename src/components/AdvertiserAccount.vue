@@ -1,5 +1,6 @@
 <script>
 import { defineComponent } from 'vue'
+import axios from 'axios'
 
 export default defineComponent({
     data(){
@@ -12,13 +13,15 @@ export default defineComponent({
             businessType: '',
             tel: '',
             address: '',
+            validity: '',
             engagementType: '',
             link: '',
             reachGoal: '',
             paymentMethod: '',
             accountName: '',
             transactionDate: '',
-            requiredField: false
+            requiredField: false,
+            loading: false
 
         }
     },
@@ -26,7 +29,7 @@ export default defineComponent({
         nextPosition(){
             this.fieldPosition++
             if(this.fieldPosition == 4){
-                if(this.name == '' || this.email == '' || this.confirmEmail !== this.email || this.businessType == '' || this.tel == '' || this.address == '' || this.engagementType == '' || this.link == '' || this.reachGoal == '' || this.paymentMethod == '' || this.accountName == '' || this.transactionDate == ''){
+                if(this.name == '' || this.email == '' || this.confirmEmail !== this.email || this.businessType == '' || this.tel == '' || this.address == '' || this.engagementType == '' || this.link == '' || this.reachGoal == '' || this.paymentMethod == '' || this.accountName == '' || this.transactionDate == '' || this.validity == ''){
                     this.fieldPosition--
                     this.requiredField = true
                 }
@@ -35,6 +38,29 @@ export default defineComponent({
         prevPosition(){
             this.fieldPosition--
             this.requiredField = false
+        },
+        async onSubmit(){
+            this.loading = true
+            let result = await axios.post("https://dbgrowthhorizon.onrender.com/advertiser" , {
+                name: this.name,
+                email: this.email,
+                website: this.website,
+                businessType: this.businessType,
+                number: this.tel,
+                address: this.address,
+                engagementType: this.engagementType,
+                validity: this.validity,
+                link: this.link,
+                reachGoal: this.reachGoal,
+                paymentMethod: this.paymentMethod,
+                accountName: this.accountName,
+                transactionDate: this.transactionDate,
+            });
+            if(result.status == 201){
+                this.fieldPosition = 5
+            }else{
+                this.loading = false
+            }
         }
     }
 })
@@ -126,6 +152,15 @@ export default defineComponent({
                         <option value="Social Media Grow" class="text-[15px]">Social Media Grow</option>
                     </select>
                 </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#0D0D3F] font-semibold" for="validity">Validity</label>
+                    <select v-model="validity" class="border py-2 rounded-md text-gray-700 outline-none" id="validity">
+                        <option disabled class="text-[15px]">--Select</option>
+                        <option value="3 days" class="text-[15px]">3 days</option>
+                        <option value="5 days" class="text-[15px]">5 days</option>
+                        <option value="1 week" class="text-[15px]">1 week</option>
+                    </select>
+                </div>
                 <div class="flex flex-col gap-2">   
                     <label class="text-[#0D0D3F] font-semibold" for="link">Link</label>
                     <input v-model="link" class="transition duration-500 focus:border-[#0D0D3F] outline-none border py-2 placeholder:text-gray-400" type="text" id="link">
@@ -206,7 +241,10 @@ export default defineComponent({
             <div class="w-full justify-between flex gap-4">
                 <button class="bg-[#28B79A] text-sm  w-[50%] p-3 text-white rounded-md hover:bg-[#15c4a1]" @click="prevPosition" v-if="fieldPosition > 0 && fieldPosition <= 4">PREVIOUS</button>
                 <button class="bg-[#28B79A] text-sm  w-[50%] p-3 text-white rounded-md hover:bg-[#15c4a1]" @click="nextPosition" v-if="fieldPosition <= 3">NEXT</button>
-                <button class="bg-[#0D0D3F] text-sm  w-[50%] p-3 text-white rounded-md" v-if="fieldPosition == 4" @click="fieldPosition = 5">SUBMIT</button>
+                <button class="bg-[#0D0D3F] text-sm  w-[50%] p-3 text-white rounded-md" v-if="fieldPosition == 4" @click="onSubmit">
+                    <span v-if="loading">Please wait ...</span>
+                    <span v-else>SUBMIT</span>
+                </button>
             </div>
         </div>
         <div v-if="fieldPosition == 5" class="relative z-20 overflow-y-auto p-4 bg-white shadow-xl flex justify-center items-center">

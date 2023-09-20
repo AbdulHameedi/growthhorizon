@@ -21,31 +21,31 @@
                     <!-- <div class="bg-[#0D0D3F] w-[33.33%] md:w-[120px] h-full rounded-xl transition-all duration-600" :class="vision ? 'md:translate-x-[265px] translate-x-[130px]' : company ? 'md:translate-x-[510px] translate-x-[290px] w-[100px] md:w-[170px]' : 'translate-x-0'"></div> -->
                 </div>
                 <div>
-                    <p v-if="mission" class="text-[#AEAEB4] text-[12px] md:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ad laboriosam, vero nesciunt distinctio inventore harum voluptas sit deleniti cum aspernatur quae quidem nam hic ipsam sequi sunt veritatis necessitatibus labore quia?</p>
-                    <p v-else-if="vision" class="text-[#AEAEB4] text-[12px] md:text-base">There are many variations of passages of available but simply free text available in the market sit amed majority alteration in simply free text available in the market some form, by humouor.</p>
-                    <p v-else class="text-[#AEAEB4] text-[12px] md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, id accusantium expedita similique, facilis ex quaerat odit fugiat itaque repellendus obcaecati commodi nobis, exercitationem vitae. Aperiam tempora ducimus veniam molestiae.</p>
+                    <p v-if="mission" class="text-[#AEAEB4] text-[12px] md:text-base">Growth Horizon's mission is to revolutionize the way people interact with online content. We're dedicated to ensuring that users are fairly rewarded for their engagement, while advertisers achieve their audience reach objectives effectively and ethically</p>
+                    <p v-else-if="vision" class="text-[#AEAEB4] text-[12px] md:text-base">At Growth Horizon, Our Vision is to empower users to turn their online presence into a valuable asset, while providing businesses with a trusted platform to promote and grow.</p>
+                    <p v-else class="text-[#AEAEB4] text-[12px] md:text-base">We are committed to transparency, trust, and professionalism in all our dealings. Our goal is to provide a secure and rewarding environment for users and advertisers alike</p>
                 </div>
                 <div class="flex lg:flex-row flex-col gap-10 md:justify-between">
                     <img class="rounded-lg" src="../assets/small-image.webp" alt="">
                     <div class="space-y-2 flex flex-col justify-between">
                         <div class="flex gap-2 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#27B397" d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
-                            <p class="text-[#0D0D3F] font-semibold lg:text-base text-sm">Suspe ndisse suscip sagittis leo</p>
+                            <p class="text-[#0D0D3F] font-semibold lg:text-base text-sm">Creating opportunities for users.</p>
                         </div>
 
                         <div class="flex gap-2 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#27B397" d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
-                            <p class="text-[#0D0D3F] font-semibold lg:text-base text-sm">Suspe ndisse suscip sagittis leo</p>
+                            <p class="text-[#0D0D3F] font-semibold lg:text-base text-sm">Dedicated to trust and professionalism.</p>
                         </div>
 
                         <div class="flex gap-2 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#27B397" d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
-                            <p class="text-[#0D0D3F] font-semibold lg:text-base text-sm">Suspe ndisse suscip sagittis leo</p>
+                            <p class="text-[#0D0D3F] font-semibold lg:text-base text-sm">Digital engagement to real financial growth.</p>
                         </div>
 
                         <div class="flex gap-2 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#27B397" d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
-                            <p class="text-[#0D0D3F] font-semibold lg:text-base text-sm">Suspe ndisse suscip sagittis leo</p>
+                            <p class="text-[#0D0D3F] font-semibold lg:text-base text-sm">Join us to redefine digital earnings</p>
                         </div>
                     </div>
                 </div>
