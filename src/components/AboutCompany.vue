@@ -29,7 +29,7 @@
                 <p class="text-[#0D0D3F] font-bold text-5xl leading-16 max-[499px]:text-3xl">We’re a trusted and professional earning company</p>
             </div>
 
-            <p class="text-[#7F7F88] text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates et eius. Cupiditate quod corrupti aliquam, amet error, illum, distinctio incidunt voluptas nemo asperiores perspiciatis?</p>
+            <p class="text-[#7F7F88] text-lg">At Growth Horizon, we prioritize trust and professionalism in every aspect of our platform. Our mission is to offer a secure and reliable environment for users and advertisers alike. With a focus on integrity and professionalism, we empower users to earn while connecting with brands</p>
 
             <div class="flex w-full justify-between items-center">
                 <div class="process flex max-[488px]:flex-col items-center gap-4">
@@ -43,12 +43,8 @@
                 </div>
             </div>
 
-            <div class="w-full flex max-[423px]:gap-6 max-[359px]:flex-col gap-10">
+            <div class="w-full max-[423px]:gap-6 max-[359px]:flex-col gap-10">
                 <p class="bg-[#2E3BA6] max-[481px]:px-6 max-[481px]:py-[10px] w-fit text-white px-10 py-[15px] font-semibold rounded-md hover:bg-[#0D0D3F] transition-bg duration-700 cursor-pointer">Discover More</p>
-                <div>
-                    <p class="text-[#0D0D3F] font-semibold text-xl max-[481px]:text-lg">Hammed Sanni</p>
-                    <p class="text-[#7F7F88] max-[481px]:text-sm">(Chairman and founder)</p>
-                </div>
             </div>
         </div>
     </div>

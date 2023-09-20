@@ -8,13 +8,13 @@
                 <p class="text-[#0D0D3F] font-bold text-5xl leading-20 max-[499px]:text-3xl text-center">Providing all the services <br> you need</p>
             </div>
 
-        <div class="grid grid-cols-4 max-[1051px]:grid-cols-3 gap-8 max-[1074px]:px-[50px] max-[753px]:grid-cols-2 max-[600px]:px-[20px] max-[460px]:grid-cols-1 px-[100px]">
+        <div class="grid grid-cols-3 max-[1180px]:grid-cols-2 gap-8 max-[1074px]:px-[50px] max-[600px]:px-[20px] max-[460px]:grid-cols-1 px-[100px]">
             <div class="background h-[294px] relative">
                 <div class="rounded-xl w-fit overflow-hidden"><img class="image-cover transition-all duration-500" src="../assets/offer-1.webp" alt=""></div>
                 <div class="icon relative z-[500] bottom-[63px] transition-all duration-500 left-8 rounded-md bg-[#28B79A] p-2 w-fit"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="white" d="M6 19h3v-5q0-.425.288-.713T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10v9Zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.713-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.413-.588T4 19Zm8-6.75Z"/></svg></div>
                 <div class="bg-content shadow-xl transition-all duration-500  bg-white relative bottom-[90px]  rounded-xl w-full p-8 space-y-[10px]">
-                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Life insurance</p>
-                    <p class="content  transition-all duration-500 text-[#A48188]">Lorem ipsum dol simple free te amet adipisg elit.</p>
+                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Content Promotion</p>
+                    <p class="content  transition-all duration-500 text-[#A48188]">Boost your reach with our effective content promotion strategies.</p>
                 </div>
             </div>
 
@@ -22,8 +22,8 @@
                 <div class="rounded-xl w-fit overflow-hidden"><img class="image-cover transition-all duration-500" src="../assets/offer-1.webp" alt=""></div>
                 <div class="icon relative z-[500] bottom-[63px] transition-all duration-500 left-8 rounded-md bg-[#28B79A] p-2 w-fit"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="white" d="M6 19h3v-5q0-.425.288-.713T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10v9Zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.713-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.413-.588T4 19Zm8-6.75Z"/></svg></div>
                 <div class="bg-content shadow-xl transition-all duration-500  bg-white relative bottom-[90px]  rounded-xl w-full p-8 space-y-[10px]">
-                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Life insurance</p>
-                    <p class="content  transition-all duration-500 text-[#A48188]">Lorem ipsum dol simple free te amet adipisg elit.</p>
+                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">User Engagement</p>
+                    <p class="content  transition-all duration-500 text-[#A48188]">Engage and grow your audience through authentic user interactions.</p>
                 </div>
             </div>
 
@@ -31,8 +31,8 @@
                 <div class="rounded-xl w-fit overflow-hidden"><img class="image-cover transition-all duration-500" src="../assets/offer-1.webp" alt=""></div>
                 <div class="icon relative z-[500] bottom-[63px] transition-all duration-500 left-8 rounded-md bg-[#28B79A] p-2 w-fit"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="white" d="M6 19h3v-5q0-.425.288-.713T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10v9Zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.713-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.413-.588T4 19Zm8-6.75Z"/></svg></div>
                 <div class="bg-content shadow-xl transition-all duration-500  bg-white relative bottom-[90px]  rounded-xl w-full p-8 space-y-[10px]">
-                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Life insurance</p>
-                    <p class="content  transition-all duration-500 text-[#A48188]">Lorem ipsum dol simple free te amet adipisg elit.</p>
+                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Campaign Management</p>
+                    <p class="content  transition-all duration-500 text-[#A48188]">Effortlessly create, manage, and optimize your advertising campaigns with us.</p>
                 </div>
             </div>
 
@@ -40,8 +40,8 @@
                 <div class="rounded-xl w-fit overflow-hidden"><img class="image-cover transition-all duration-500" src="../assets/offer-1.webp" alt=""></div>
                 <div class="icon relative z-[500] bottom-[63px] transition-all duration-500 left-8 rounded-md bg-[#28B79A] p-2 w-fit"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="white" d="M6 19h3v-5q0-.425.288-.713T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10v9Zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.713-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.413-.588T4 19Zm8-6.75Z"/></svg></div>
                 <div class="bg-content shadow-xl transition-all duration-500  bg-white relative bottom-[90px]  rounded-xl w-full p-8 space-y-[10px]">
-                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Life insurance</p>
-                    <p class="content  transition-all duration-500 text-[#A48188]">Lorem ipsum dol simple free te amet adipisg elit.</p>
+                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">User Earnings</p>
+                    <p class="content  transition-all duration-500 text-[#A48188]">Earn real income by actively participating in our engaging content promotions</p>
                 </div>
             </div>
 
@@ -49,8 +49,8 @@
                 <div class="rounded-xl w-fit overflow-hidden"><img class="image-cover transition-all duration-500" src="../assets/offer-1.webp" alt=""></div>
                 <div class="icon relative z-[500] bottom-[63px] transition-all duration-500 left-8 rounded-md bg-[#28B79A] p-2 w-fit"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="white" d="M6 19h3v-5q0-.425.288-.713T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10v9Zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.713-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.413-.588T4 19Zm8-6.75Z"/></svg></div>
                 <div class="bg-content shadow-xl transition-all duration-500  bg-white relative bottom-[90px]  rounded-xl w-full p-8 space-y-[10px]">
-                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Life insurance</p>
-                    <p class="content  transition-all duration-500 text-[#A48188]">Lorem ipsum dol simple free te amet adipisg elit.</p>
+                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Advertising Solutions</p>
+                    <p class="content  transition-all duration-500 text-[#A48188]">Connect with a diverse user base for impactful and targeted advertising.</p>
                 </div>
             </div>
 
@@ -58,8 +58,17 @@
                 <div class="rounded-xl w-fit overflow-hidden"><img class="image-cover transition-all duration-500" src="../assets/offer-1.webp" alt=""></div>
                 <div class="icon relative z-[500] bottom-[63px] transition-all duration-500 left-8 rounded-md bg-[#28B79A] p-2 w-fit"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="white" d="M6 19h3v-5q0-.425.288-.713T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10v9Zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.713-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.413-.588T4 19Zm8-6.75Z"/></svg></div>
                 <div class="bg-content shadow-xl transition-all duration-500  bg-white relative bottom-[90px]  rounded-xl w-full p-8 space-y-[10px]">
-                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Life insurance</p>
-                    <p class="content  transition-all duration-500 text-[#A48188]">Lorem ipsum dol simple free te amet adipisg elit.</p>
+                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">Flexible Earning</p>
+                    <p class="content  transition-all duration-500 text-[#A48188]">Enjoy flexible payment options and timely withdrawals for your earnings.</p>
+                </div>
+            </div>
+
+            <div class="background h-[294px] relative h-[294px]">
+                <div class="rounded-xl w-fit overflow-hidden"><img class="image-cover transition-all duration-500" src="../assets/offer-1.webp" alt=""></div>
+                <div class="icon relative z-[500] bottom-[63px] transition-all duration-500 left-8 rounded-md bg-[#28B79A] p-2 w-fit"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="white" d="M6 19h3v-5q0-.425.288-.713T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10v9Zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.713-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.413-.588T4 19Zm8-6.75Z"/></svg></div>
+                <div class="bg-content shadow-xl transition-all duration-500  bg-white relative bottom-[90px]  rounded-xl w-full p-8 space-y-[10px]">
+                    <p class="content  transition-all duration-500 text-[#0D0D3F] text-xl font-bold">User Support</p>
+                    <p class="content  transition-all duration-500 text-[#A48188]">Our dedicated support team is here to assist you every step of the way.</p>
                 </div>
             </div>
 
