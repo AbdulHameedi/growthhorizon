@@ -14,7 +14,7 @@ export default defineComponent({})
         <p class="text-[#0D0D3F] mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sit magni fuga suscipit labore tempora ab nisi hic illo amet accusantium tempore quaerat laborum. Laudantium quaerat dicta nemo aliquid nulla eveniet? Praesentium, voluptatum odit doloribus totam molestias nam rerum assumenda.</p>
         <div class="flex items-center gap-2">
             <div class="w-[50px] h-[50px]">
-                <img class="rounded-[50%]" src="../assets/image-3es.png" alt="elevated excellece elementary">
+                <img class="rounded-[50%]" src="../assets/image-footer-2.jpg" alt="elevated excellece elementary">
             </div>
             <div>
                 <p class="text-lg font-semibold">Elevated Elementary</p>
