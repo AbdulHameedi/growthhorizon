@@ -31,12 +31,12 @@ export default defineComponent({
 })
 </script>
 <template>
-  <Navbar />
+  <Navbar id="top"/>
   <HeroSection />
   <AboutCompany />
   <OurOffer />
   <OurVisionAndMission />
-  <ScrollToTop />
+  <a href="#top"><ScrollToTop /></a>  
   <Testimonials />
   <Ratings />
   <Contact />
@@ -44,3 +44,8 @@ export default defineComponent({
   <RegisterFooter />
   <Footer />
 </template>
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+</style>

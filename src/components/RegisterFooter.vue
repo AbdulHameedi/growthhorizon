@@ -23,7 +23,7 @@ export default defineComponent({
                 </div>
             </div>
             <div>
-                <button class="bg-white text-[#0D0D3F] rounded-md text-lg font-semibold px-[3rem] py-4 hover:bg-[#0D0D3F] hover:text-white transition duration-500">Get Started</button>
+                <router-link to="/signup"><button class="bg-white text-[#0D0D3F] rounded-md text-lg font-semibold px-[3rem] py-4 hover:bg-[#0D0D3F] hover:text-white transition duration-500">Get Started</button></router-link>
             </div>
         </div>
     </div>

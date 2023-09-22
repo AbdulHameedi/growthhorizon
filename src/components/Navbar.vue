@@ -146,7 +146,7 @@
                     <p class="text-white font-semibold lg:text-6xl md:text-4xl text-md bg-[#2E3BA6] p-4 rounded-xl w-fit">{{ section.lastHeaderContent }}</p>
                  </div>
                  <p class="text-white font-semibold lg:text-xl md:text-lg text-md">{{ section.paragraph }}</p>
-                 <p class="bg-white text[#0D0D3F] px-4 py-2 md:px-8 md:py-4 rounded-xl w-fit font-semibold hover:bg-[#0D0D3F] hover:text-white transition-bg duration-700 cursor-pointer">{{ section.actionButton }}</p>
+                 <router-link to="/signup"><p class="bg-white text[#0D0D3F] px-4 py-2 md:px-8 md:py-4 rounded-xl w-fit font-semibold hover:bg-[#0D0D3F] hover:text-white transition-bg duration-700 cursor-pointer">{{ section.actionButton }}</p></router-link>
                </div> 
                
                <div class="flex flex-col gap-6 absolute top-60 md:right-18 right-14 lg:right-20">
