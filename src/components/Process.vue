@@ -77,7 +77,7 @@ export default defineComponent({
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">Must be between the ages of 16 and 40 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, consequuntur.</p>
+                            <p class="font-semibold">Must be between the ages of 16 and 40 Lorem sit amet consectetur adipisicing elit. Aperiam, consequuntur.</p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
