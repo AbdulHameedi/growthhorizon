@@ -15,7 +15,7 @@ export default defineComponent({
 <template>
     <section>
         <div class="bg-[url('../assets/bg-section.jpg')] bg-center">
-            <div class="bg-feature bg-[url('../assets/featured-bg.webp')] h-[390px] flex flex-col gap-3 pl-20 justify-center text-white max-[1312px]:px-[1rem]">
+            <div class="bg-feature bg-[url('../assets/featured-bg.webp')] bg-center h-[390px] flex flex-col gap-3 pl-20 justify-center text-white max-[1312px]:px-[1rem]">
                 <h2 class="font-bold text-5xl max-[541px]:text-4xl max-[375px]:text-3xl">Discover the impact of Growth Horizon</h2>
                 <div class="flex items-center gap-3">
                     <router-link to="/"><p class="hover:text-gray-400 cursor-pointer">HOME</p></router-link>

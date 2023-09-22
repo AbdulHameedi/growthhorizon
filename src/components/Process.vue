@@ -23,7 +23,7 @@ export default defineComponent({
     <section>
         <div class="bg-gradient-to-l from-[#0D0D3F] to-[#26486B]">
             <!-- bg-feature -->
-            <div class="bg-feature bg-[url('../assets/featured-bg.webp')] h-[390px] flex flex-col gap-3 pl-20 justify-center text-white max-[1312px]:px-[1rem]">
+            <div class="bg-feature bg-[url('../assets/featured-bg.webp')] bg-center h-[390px] flex flex-col gap-3 pl-20 justify-center text-white max-[1312px]:px-[1rem]">
                 <h2 class="font-bold text-6xl">Process</h2>
                 <div class="flex items-center gap-3">
                     <router-link to="/"><p class="hover:text-gray-400 cursor-pointer">HOME</p></router-link>
@@ -83,13 +83,13 @@ export default defineComponent({
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
                             <p class="font-semibold">Must be between the ages of 16 and 40 </p>
                         </div>
-                        <router-link to="/signup"><button class="w-fit p-3 px-6 rounded-md border border-green-300 mt-8 transition duration-500 hover:bg-green-400 hover:text-white">Apply Now</button></router-link>
+                        <router-link to="/signup"><button class="w-fit p-3 px-6 rounded-md border border-green-500 mt-8 transition duration-500 hover:bg-green-400 hover:text-white">Apply Now</button></router-link>
                     </div>
                     <!--  -->
                     <div class="flex flex-col gap-3" v-else>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 textwhite rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">*Your facebook profile should be at least 1 year old</p>
+                            <p class="font-semibold">Your facebook profile should be at least 1 year old</p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
@@ -107,7 +107,7 @@ export default defineComponent({
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
                             <p class="font-semibold">Must be between the ages of 16 and 40 </p>
                         </div>
-                        <router-link to="/signup"><button class="w-fit p-3 px-6 rounded-md border border-green-300 mt-8 transition duration-500 hover:bg-green-400 hover:text-white">Apply Now</button></router-link>
+                        <router-link to="/signup"><button class="w-fit p-3 px-6 rounded-md border border-green-500 mt-8 transition duration-500 hover:bg-green-400 hover:text-white">Apply Now</button></router-link>
                     </div>
                     <div>
                         <img class="w-full rounded-md h-full" src="../assets/offer-meeting.jpeg" alt="">
@@ -117,7 +117,7 @@ export default defineComponent({
         </div>
         <RegisterFooter />
         <Footer />
-    </section>
+    </section>  
 </template>
 <style>
 .bg-feature{
