@@ -6,7 +6,7 @@ import TestimonialPage from '../components/TestimonialPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  base: 'https://growthhorizon.vercel.app/',
+  base: '/https://growthhorizon.vercel.app/',
   routes: [
     {
       path: '/',
