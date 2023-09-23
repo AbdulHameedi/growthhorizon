@@ -1,10 +1,26 @@
 <script>
 import { defineComponent } from 'vue'
+import axios from 'axios'
 
 export default defineComponent({
   data(){
     return{
-
+      email: ''
+    }
+  },
+  methods: {
+    async onSubmit(){
+      if(this.email == ''){
+        alert('Field is empty')
+      }else{
+        let result = await axios.post("https://dbgrowthhorizon.onrender.com/newsletter" , {
+          email: this.email
+        })
+        if(result.status == 201){
+          alert('Submitted');
+          this.email = ''
+        }
+      }
     }
   }
 })
@@ -39,8 +55,8 @@ export default defineComponent({
             </div>
             <div class="flex flex-col gap-3 text-gray-500 text-md font-semibold">
                 <p class="text-white text-2xl font-semibold">Contact</p>
-                <p>88 Broklyn Golden Road Street, New York. USA</p>
-                <p>Mon – Sat: 8:00am to 6:00pm Sun: Closed</p>
+                <p>123 Digital Avenue, Online Business Headquarters</p>
+                <p>Mon – Sat: 12:00am to 12:00pm Sun: Closed</p>
                 <div class="flex items-center gap-2 text-white">
                   <p class="bg-[#181855] rounded-[50%] p-3 hover:bg-[#28B79A] hover:scale-x-[-1]"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="currentColor" d="M8 2H1l8.26 11.014L1.45 22H4.1l6.388-7.349L16 22h7l-8.608-11.478L21.8 2h-2.65l-5.986 6.886L8 2Zm9 18L5 4h2l12 16h-2Z"/></svg></p>
                   <p class="bg-[#181855] rounded-[50%] p-3 hover:bg-[#28B79A] hover:scale-x-[-1]"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="currentColor" d="M13.001 19.938a8.001 8.001 0 0 0-1-15.938a8 8 0 0 0-1 15.938V14h-2v-2h2v-1.654c0-1.337.14-1.822.4-2.311A2.725 2.725 0 0 1 12.537 6.9c.382-.205.857-.328 1.687-.381c.329-.021.755.005 1.278.08v1.9h-.5c-.917 0-1.296.043-1.522.164a.728.728 0 0 0-.314.314c-.12.226-.164.45-.164 1.368V12h2.5l-.5 2h-2v5.938Zm-1 2.062c-5.523 0-10-4.477-10-10s4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10Z"/></svg></p>
@@ -51,20 +67,20 @@ export default defineComponent({
             <div>
               <p class="text-white text-2xl font-semibold mb-4">Gallery</p>
               <div class="grid grid-cols-3 gap-2">
-                <img class="rounded-md" src="../assets/image-footer-3.jpg" alt="">
-                <img class="rounded-md" src="../assets/news04-370x320.webp" alt="">
-                <img class="rounded-md" src="../assets/news03-370x320.webp" alt="">
-                <img class="rounded-md" src="../assets/business-insurance.webp" alt="">
-                <img class="rounded-md" src="../assets/image-footer-4.jpg" alt="">
-                <img class="rounded-md" src="../assets/business-insurance.webp" alt="">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news04-370x320.webp" alt="">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news04-370x320.webp" alt="">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news03-370x320.webp" alt="">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/business-insurance.webp" alt="">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news03-370x320.webp" alt="">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/business-insurance.webp" alt="">
               </div>
             </div>
             <div>
               <p class="text-white text-xl font-semibold mb-4">Transforming digital activity into tangible rewards</p>
               <p class="mb-4 text-gray-500 text-md font-semibold">Subscribe our newsletter</p>
-              <form>
+              <form @submit.prevent="onSubmit">
                 <div class="flex items-center">
-                  <input class="p-4 rounded-l-md outline-none max-[1204px]:w-full" type="email" placeholder="Email address">
+                  <input class="p-4 rounded-l-md outline-none max-[1204px]:w-full" type="email" placeholder="Email address" v-model="email">
                   <button type="submit" class="bg-[#28B79A] rounded-r-md p-[1.2rem] text-white"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path d="M435.9 64.9l-367.1 160c-6.5 3.1-6.3 12.4.3 15.3l99.3 56.1c5.9 3.3 13.2 2.6 18.3-1.8l195.8-168.8c1.3-1.1 4.4-3.2 5.6-2 1.3 1.3-.7 4.3-1.8 5.6L216.9 320.1c-4.7 5.3-5.4 13.1-1.6 19.1l64.9 104.1c3.2 6.3 12.3 6.2 15.2-.2L447.2 76c3.3-7.2-4.2-14.5-11.3-11.1z" fill="currentColor"/></svg></button>
                 </div>
               </form>
