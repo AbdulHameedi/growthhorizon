@@ -4,7 +4,7 @@
             <div class="flex items-center gap-8">
                 <div class="flex gap-[4px] items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#27B296" d="M12 12q.825 0 1.413-.588T14 10q0-.825-.588-1.413T12 8q-.825 0-1.413.588T10 10q0 .825.588 1.413T12 12Zm0 10q-4.025-3.425-6.012-6.362T4 10.2q0-3.75 2.413-5.975T12 2q3.175 0 5.588 2.225T20 10.2q0 2.5-1.988 5.438T12 22Z"/></svg>
-                    <p class="text-white font-semibold">30 Commercial Road Fratton, Australia</p>
+                    <p class="text-white font-semibold">Online Business Headquarter</p>
                 </div>
                 <div class="flex gap-[4px] items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#27B296" d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.313t.1-.412q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037Z"/></svg>
@@ -30,8 +30,6 @@
 
 
         <div  class="bg-cover bg-center relative"  :class="currentIndex === 0 ? 'bg-[url(../assets/bg-image-2-2.webp)]' : currentIndex === 1 ? 'bg-[url(../assets/bg-image-2.webp)]' : 'bg-white'">
-
-
             <!-- MOBILE NAV -->
             <div class="px-[5.5rem] lg:hidden max-[1312px]:px-[1rem] flex items-end justify-between py-8">
                 <div class="flex flex-col items-center w-fit relative">
@@ -66,9 +64,9 @@
                     
                     <p @click="NewsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onNewsActive ? 'text-white' : 'text-white'">News</p>
     
-                    <p @click="FaqsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onFaqsActive ? 'text-white' : 'text-white'">Faqs</p>
+                    <router-link to="/process"><p @click="FaqsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onFaqsActive ? 'text-white' : 'text-white'">Process</p></router-link>
     
-                    <router-link to="/testimonial"><p @click="TestimonialsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onTestimonialActive ? 'text-white' : 'text-white'">Testimonials</p></router-link>
+                    <p @click="TestimonialsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onTestimonialActive ? 'text-white' : 'text-white'">Testimonials</p>
     
                     <p @click="GetInTouchActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onGetInTouchActive ? 'text-white' : 'text-white'">Get in touch</p>
     
@@ -77,7 +75,7 @@
                         <p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-white hover:text-[#0D0D3F] py-2 md:px-6 px-4 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign in</p>
                     </div>
     
-                    <p class="lg:hidden block text-white font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum recusandae fuga perspiciatis enim consequuntur magni,</p>
+                    <p class="lg:hidden block text-white font-semibold">At Growth Horizon, Our Vision is to empower users to turn their online presence into a valuable asset, while providing businesses with a trusted platform to promote and grow</p>
     
                     <div class="lg:hidden flex items-center gap-2 text-white">
                       <p class="bg-[#181855] rounded-[50%] p-3 hover:bg-[#28B79A] hover:scale-x-[-1]"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="currentColor" d="M8 2H1l8.26 11.014L1.45 22H4.1l6.388-7.349L16 22h7l-8.608-11.478L21.8 2h-2.65l-5.986 6.886L8 2Zm9 18L5 4h2l12 16h-2Z"/></svg></p>
@@ -117,14 +115,14 @@
     
                         <div v-show="onPagesDropdownActive" class="shadow-xl bg-white w-[200px] px-4 py-4 rounded-[20px] space-y-2 absolute top-8">
                             <p @click="AboutUsActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onAboutUsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">About us</p>
-                            <router-link to="/process"><p @click="ProcessActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onProcessActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Process</p></router-link>
+                            <p @click="ProcessActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onProcessActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">FAQs</p>
                             <p @click="PlansActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onPlansActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Plans</p>
                         </div>
                     </div>
                     
                     <p @click="NewsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onNewsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">News</p>
     
-                    <p @click="FaqsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onFaqsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Faqs</p>
+                    <router-link to="/process"><p @click="FaqsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onFaqsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Process</p></router-link>
     
                     <router-link to="/testimonial"><p @click="TestimonialsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onTestimonialActive ? 'text-[#0D0D3F] ' : ' text-[#7F7F88]'">Testimonials</p></router-link>
     
@@ -186,7 +184,7 @@
                     {
                         firstHeaderContent: 'Grow your',
                         lastHeaderContent: 'Audience | Subscribers | Customers',
-                        paragraph: 'We are trusted and professional earning company',
+                        paragraph: 'We prioritize trust and professionalism in our platform',
                         actionButton: "Let's get started"
                     },
                     {

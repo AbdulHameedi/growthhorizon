@@ -35,9 +35,12 @@ export default defineComponent({
     </div>
 </template>
 <style scoped>
-    .visit{
-        display: none;
-        transition: all 0.3s;
+    @media screen and (min-width: 468px){
+        .visit{
+            display: none;
+            transition: all 0.3s;
+        }
+
     }
     .visit-container:hover .visit{
         display: flex;

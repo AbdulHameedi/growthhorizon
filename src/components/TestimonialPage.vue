@@ -2,7 +2,7 @@
 import { defineComponent } from 'vue'
 import TestimonialCard from './TestimonialCard.vue';
 import RegisterFooter from './RegisterFooter.vue';
-import Footer from './Footer.vue';
+import Footer from './Footer.vue'
 
 export default defineComponent({
     components: {
