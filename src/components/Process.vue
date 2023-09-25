@@ -53,6 +53,7 @@ export default defineComponent({
                     <b v-if="isComponent == 'UserProcess'" class="text-[#0D0D3F]">User</b>
                     <b v-else class="text-[#0D0D3F]">Advertiser</b>
                 </p>
+                <!-- user -->
                 <div class="md:p-5 pt-5 grid md:grid-cols-2 md:gap-4 grid-cols-1 gap-10 p-2">
                     <div class="flex flex-col gap-3" v-if="isComponent == 'UserProcess'">
                         <div class="flex gap-3 items-center">
@@ -77,31 +78,31 @@ export default defineComponent({
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">Must be between the ages of 16 and 40 Lorem sit amet consectetur adipisicing elit. Aperiam, consequuntur.</p>
+                            <p class="font-semibold">Must be between the ages of 16 and 40</p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">Must be between the ages of 16 and 40 </p>
+                            <p class="font-semibold">You <b>must</b> withdraw your earnings when the withdrawal form is available</p>
                         </div>
                         <router-link to="/signup"><button class="w-fit p-3 px-6 rounded-md border border-green-500 mt-8 transition duration-500 hover:bg-green-400 hover:text-white">Apply Now</button></router-link>
                     </div>
-                    <!--  -->
+                    <!-- advertiser -->
                     <div class="flex flex-col gap-3" v-else>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 textwhite rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">Your facebook profile should be at least 1 year old</p>
+                            <p class="font-semibold">Payments should be made prior to filling the signup data</p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">Withdrawal form is opened in the third weekend of the month</p>
+                            <p class="font-semibold">The link field should be an available link online to the ad(s) you desire to grow</p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">N50.00 is earned per post</p>
+                            <p class="font-semibold">You may be an advertiser and a user earning at the same time</p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">Must be between the ages of 16 and 40 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, consequuntur.</p>
+                            <p class="font-semibold">Must be between the ages of 14 and 40 </p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>

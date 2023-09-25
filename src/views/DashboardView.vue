@@ -1,13 +1,14 @@
 <script>
 import { defineComponent } from 'vue'
-import Dashboard from '../components/Dashboard.vue'
+import DashboardHeader from '../components/DashboardHeader.vue'
 
 export default defineComponent({
     components: {
-        Dashboard
+        DashboardHeader
     }
 })
 </script>
 <template>
-    <Dashboard />
+    <DashboardHeader />
+    <router-view></router-view>
 </template>
