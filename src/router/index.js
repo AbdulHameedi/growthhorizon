@@ -4,6 +4,8 @@ import SignupView from '../views/SignupView.vue'
 import ProcessView from '../views/ProcessView.vue'
 import TestimonialPage from '../components/TestimonialPage.vue'
 import DashboardView from '../views/DashboardView.vue'
+import Overview from '../components/Overview.vue'
+import Settings from '../components/Settings.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,7 +34,19 @@ const router = createRouter({
     {
       path: '/dashboard',
       name: 'Dashboard',
-      component: DashboardView
+      component: DashboardView,
+      children: [
+        {
+          path: '',
+          name: 'Overview',
+          component: Overview
+        },
+        {
+          path: 'settings',
+          name: 'Settings',
+          component: Settings
+        }
+      ]
     }
   ]
 })
