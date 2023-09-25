@@ -6,6 +6,8 @@ import TestimonialPage from '../components/TestimonialPage.vue'
 import DashboardView from '../views/DashboardView.vue'
 import Overview from '../components/Overview.vue'
 import Settings from '../components/Settings.vue'
+import Withdrawal from '../components/Withdrawal.vue'
+import Notification from '../components/Notification.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,6 +47,16 @@ const router = createRouter({
           path: 'settings',
           name: 'Settings',
           component: Settings
+        },
+        {
+          path: 'withdrawal',
+          name: 'Withdrawal',
+          component: Withdrawal
+        },
+        {
+          path: 'notification',
+          name: 'Notification',
+          component: Notification
         }
       ]
     }

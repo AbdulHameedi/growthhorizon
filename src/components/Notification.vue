@@ -7,7 +7,7 @@ export default defineComponent({
 <template>
     <section class="mt-[7rem]">
         <header class="text-[#0D0D3F] p-14 text-5xl border-b max-[768px]:px-4">
-            <p>Settings</p>
+            <p>Notification</p>
         </header>
         <main class="py-10 px-14 max-[767px]:px-4 min-[768px]:w-[80%] flex flex-col gap-8">
             <div class="rounded-md border text-gray-600">
