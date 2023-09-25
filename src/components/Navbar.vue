@@ -56,17 +56,17 @@
                             </div>
         
                             <div v-show="onPagesDropdownActive" class="space-y-2">
-                                <p @click="AboutUsActive()" class="p-4 font-semibold py-2 border-b border-[#7F7F88] cursor-pointer text-lg text-white">About us</p>
+                                <p @click="AboutUsActive()" class="p-4 font-semibold py-2 border-b border-[#7F7F88] cursor-pointer text-lg text-white">News</p>
                                 <router-link to="/process"><p @click="ProcessActive()" class="p-4 font-semibold py-2 border-b border-[#7F7F88] cursor-pointer text-lg text-white">Process</p></router-link>
                                 <p @click="PlansActive()" class="p-4 font-semibold py-2 border-b border-[#7F7F88] cursor-pointer text-lg text-white">Plans</p>
                             </div>
                     </div>
                     
-                    <p @click="NewsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onNewsActive ? 'text-white' : 'text-white'">News</p>
+                    <a href="#about"><p @click="NewsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onNewsActive ? 'text-white' : 'text-white'">About us</p></a>
     
                     <router-link to="/process"><p @click="FaqsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onFaqsActive ? 'text-white' : 'text-white'">Process</p></router-link>
     
-                    <p @click="TestimonialsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onTestimonialActive ? 'text-white' : 'text-white'">Testimonials</p>
+                    <router-link to="/testimonial"><p @click="TestimonialsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onTestimonialActive ? 'text-white' : 'text-white'">Testimonials</p></router-link>
     
                     <p @click="GetInTouchActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onGetInTouchActive ? 'text-white' : 'text-white'">Get in touch</p>
     
@@ -114,19 +114,19 @@
                         </div>
     
                         <div v-show="onPagesDropdownActive" class="shadow-xl bg-white w-[200px] px-4 py-4 rounded-[20px] space-y-2 absolute top-8">
-                            <p @click="AboutUsActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onAboutUsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">About us</p>
+                            <p @click="AboutUsActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onAboutUsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">News</p>
                             <p @click="ProcessActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onProcessActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">FAQs</p>
                             <p @click="PlansActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onPlansActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Plans</p>
                         </div>
                     </div>
                     
-                    <p @click="NewsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onNewsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">News</p>
+                    <a href="#about"><p @click="NewsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onNewsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">About us</p></a>
     
                     <router-link to="/process"><p @click="FaqsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onFaqsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Process</p></router-link>
     
                     <router-link to="/testimonial"><p @click="TestimonialsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onTestimonialActive ? 'text-[#0D0D3F] ' : ' text-[#7F7F88]'">Testimonials</p></router-link>
     
-                    <p @click="GetInTouchActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onGetInTouchActive ? 'text-[#0D0D3F] ' : ' text-[#7F7F88]'">Get in touch</p>
+                    <a href="#contact"><p @click="GetInTouchActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onGetInTouchActive ? 'text-[#0D0D3F] ' : ' text-[#7F7F88]'">Get in touch</p></a>
     
                 </nav>
         

@@ -1,5 +1,5 @@
 <template>
-    <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out" class="background bg-[#EAEAF3] mt-20 overflow-hidden lg:pb-0  pt-10 min-[1312px]:px-20 px-10 max-[768px]:px-[1rem] lg:grid lg:grid-cols-2 flex flex-col-reverse items-center gap-10 w-full">
+    <div id="about" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out" class="background bg-[#EAEAF3] mt-20 overflow-hidden lg:pb-0  pt-10 min-[1312px]:px-20 px-10 max-[768px]:px-[1rem] lg:grid lg:grid-cols-2 flex flex-col-reverse items-center gap-10 w-full">
         <div class="w-full">
             <div class="relative lg:w-fit w-full mx-auto">
                 <img class="w-full" src="../assets/about-bg.webp" al t="">

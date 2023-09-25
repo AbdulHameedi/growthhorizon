@@ -35,7 +35,7 @@ export default defineComponent({
 })
 </script>
 <template>
-    <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out" class="w-full bg-[url('../assets/bg-section.jpg')] flex max-[850px]:flex-col bg-center">
+    <div id="contact" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out" class="w-full bg-[url('../assets/bg-section.jpg')] flex max-[850px]:flex-col bg-center">
         <div class="w-[50%] max-[850px]:w-full">
             <img class="contact-img h-full" src="../assets/img-morph1.webp" alt="">
         </div>

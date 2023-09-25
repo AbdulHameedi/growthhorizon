@@ -32,7 +32,7 @@ export default defineComponent({
 })
 </script>
 <template>
-        <header class="px-5 border-b pb-3">
+        <header class="px-5 border-b pb-3 fixed left-0 right-0 bg-white top-0">
             <!-- notification-box overlay -->
             <p @click="notificationBox = false" v-if="notificationBox" class="hidden max-[570px]:block fixed bottom-0 w-full bg-black top-0 left-0 opacity-40"></p>
 
@@ -81,7 +81,7 @@ export default defineComponent({
                                 </div>
                                 <div class="flex items-center gap-5 p-4 border-b hover:bg-gray-100 cursor-pointer">
                                     <p class="text-red-400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20"><path fill="currentColor" d="M10 0a10 10 0 1 0 10 10A10 10 0 0 0 10 0zm1 16H9v-2h2zm0-4H9V4h2z"/></svg></p>
-                                    <p>growth horizon failed to deploy in the production environment</p>
+                                    <p>Is this a new account? Change your password</p>
                                 </div>
                                 <div class="flex items-center gap-5 p-4 border-b hover:bg-gray-100 cursor-pointer">
                                     <p class="text-red-400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20"><path fill="currentColor" d="M10 0a10 10 0 1 0 10 10A10 10 0 0 0 10 0zm1 16H9v-2h2zm0-4H9V4h2z"/></svg></p>
@@ -96,7 +96,7 @@ export default defineComponent({
                                 <p>No availabe notification</p>
                             </div>
                             <div class="border-t flex justify-center p-3 font-semibold">
-                                <p class="cursor-pointer hover:bg-gray-200 rounded-md p-1 px-3">Expand</p>
+                                <router-link to="/dashboard/notification"><p @click="notificationBox = false" class="cursor-pointer hover:bg-gray-200 rounded-md p-1 px-3">Expand</p></router-link>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ export default defineComponent({
                         <p @click="userBoxFunc" class="w-fit p-1 bg-[#0D0D3F] text-white rounded-[50%] border hover:bg-white hover:border hover:text-[#0D0D3F] transition duration-200"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5.9a2.1 2.1 0 1 1 0 4.2a2.1 2.1 0 0 1 0-4.2m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/></svg></p>
                         <div v-if="userBox" class="py-5 text-gray-600 absolute shadow-md top-10 bg-white rounded-md right-0 w-[250px]">
                             <p class="pb-2 px-3">sanilinity507@gmail.com</p>
-                            <p class="hover:bg-gray-100 cursor-pointer p-2 px-3">Change Password</p>
+                            <router-link to="/dashboard/settings"><p @click="userBox = false" class="hover:bg-gray-100 cursor-pointer p-2 px-3">Change Password</p></router-link>
                             <router-link to="/dashboard/settings">
                             <div @click="userBox = false" class="flex items-center justify-between hover:bg-gray-100 cursor-pointer p-2 px-3">
                                 <p>Settings</p>
@@ -126,9 +126,9 @@ export default defineComponent({
                 <router-link to="/dashboard"><p :class="$route.path == '/dashboard' && 'bg-gray-200'" class="hover:bg-gray-200 hover:text-black p-1 px-3 rounded-md transition duration-300">Overview</p></router-link>
                 <p class="hover:bg-gray-200 hover:text-black p-1 px-3 rounded-md transition duration-300">Deployments</p>
                 <p class="hover:bg-gray-200 hover:text-black p-1 px-3 rounded-md transition duration-300">Analytics</p>
-                <p class="hover:bg-gray-200 hover:text-black p-1 px-3 rounded-md transition duration-300">Notification</p>
+                <router-link to="/dashboard/notification"><p :class="$route.path == '/dashboard/notification' && 'bg-gray-200'" class="hover:bg-gray-200 hover:text-black p-1 px-3 rounded-md transition duration-300">Notification</p></router-link>
                 <p class="hover:bg-gray-200 hover:text-black p-1 px-3 rounded-md transition duration-300">Logs</p>
-                <p class="hover:bg-gray-200 hover:text-black p-1 px-3 rounded-md transition duration-300">Withdrawal</p>
+                <router-link to="/dashboard/withdrawal"><p :class="$route.path == '/dashboard/withdrawal' && 'bg-gray-200'" class="hover:bg-gray-200 hover:text-black p-1 px-3 rounded-md transition duration-300">Withdrawal</p></router-link>
                 <router-link to="/dashboard/settings"><p :class="$route.path == '/dashboard/settings' && 'bg-gray-200'" class="hover:bg-gray-200 hover:text-black p-1 px-3 rounded-md transition duration-300">Settings</p></router-link>
             </div>
         </header>
