@@ -49,7 +49,7 @@ export default defineComponent({
                 <button type="submit" class="w-fit px-20 p-3 bg-[#0D0D3F] hover:bg-[#1e1e5a] rounded-md text-white mt-5 max-[425px]:w-full">Submit</button>
             </form>
         </main>
-        <main class="py-10 px-14 min-[880px]:w-[80%] max-[880px]:px-4">
+        <main class="py-10 px-14 min-[880px]:w-[80%] max-[880px]:px-4" v-else>
             <div class="text-lg rounded-md border w-full h-[500px] text-[#0D0D3F] flex justify-center items-center">
                 <p>Withdrawal form is unavailable</p>
             </div>

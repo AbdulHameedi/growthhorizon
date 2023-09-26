@@ -3,7 +3,8 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     data(){
         return{
-            copied: false
+            copied: false,
+            contentAvailable: true
         }
     },
     methods: {
@@ -34,7 +35,7 @@ export default defineComponent({
                 <p class="text-[#0D0D3F] text-2xl mb-3 font-semibold">Explore Content Categories</p>
                 <p>At the heart of your earnings journey is engagement. Interact with our carefully curated content, share it, and see your earnings grow in real-time.</p>
             </div>
-            <div class="w-full bg-white rounded-md shadow-xl">
+            <div class="w-full bg-white rounded-md shadow-xl" v-if="contentAvailable">
                 <p class="rounded-t-md bg-gray-200 w-full p-1 px-6  text-gray-700">Monday, 25th September, 2023</p>
 
                 <!-- content-1</p> -->
@@ -74,6 +75,10 @@ export default defineComponent({
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- inavailable content -->
+            <div v-else class="w-full bg-white text=[#0D0D3F] rounded-md shadow-xl h-[400px] flex items-center justify-center">
+                <p>Content is inavailable. Check back later</p>
             </div>
         </main>
     </section>
