@@ -30,6 +30,7 @@
 
             <div  class="bg-cover bg-center relative" :class="currentIndex === 0 ?  'bg-[url(../assets/bg-image-2-2.webp)]' : currentIndex === 1 ? 'bg-[url(../assets/bg-image-2.webp)]' : 'bg-white'">
                 <!-- MOBILE NAV -->
+                <div :class="[navColor]">
                     <div class="px-[5.5rem] lg:hidden max-[1312px]:px-[1rem] flex items-end justify-between py-8">
                         <div class="flex flex-col items-center w-fit relative">
                             <img src="../assets/logo.svg" width="25" alt="Logo">
@@ -82,6 +83,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M4 7h3m13 0h-9m9 10h-3M4 17h9m-9-5h16"/></svg>
                         </div>
                     </div>
+                </div>
     
                 <!-- DESKTOP NAV -->
                 <div :class="[navColor]">
