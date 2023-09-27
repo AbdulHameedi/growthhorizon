@@ -21,7 +21,9 @@ export default defineComponent({
             accountName: '',
             transactionDate: '',
             requiredField: false,
-            loading: false
+            loading: false,
+            referralButton : '',
+            referralEmail: ''
 
         }
     },
@@ -55,12 +57,16 @@ export default defineComponent({
                 paymentMethod: this.paymentMethod,
                 accountName: this.accountName,
                 transactionDate: this.transactionDate,
+                referralEmail: this.referralEmail,
             });
             if(result.status == 201){
                 this.fieldPosition = 5
             }else{
                 this.loading = false
             }
+        },
+        cons(){
+            console.log(this.referralButton)
         }
     }
 })
@@ -168,6 +174,23 @@ export default defineComponent({
                 <div class="flex flex-col gap-2">
                     <label class="text-[#0D0D3F] font-semibold" for="reach-goal">Reach Goal</label>
                     <input v-model="reachGoal" placeholder="1000..." class="transition duration-500 focus:border-[#0D0D3F] outline-none border py-2 placeholder:text-gray-400" type="text" id="reach-goal">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-[#0D0D3F] font-semibold" for="reach-goal">Do you have a referral?</label>
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-1">
+                            <input id="yes_refer" name="refer" type="radio" value="yes" v-model="referralButton">
+                            <label for="yes_refer">Yes</label>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <input id="no_refer" name="refer" type="radio" value="no" v-model="referralButton">
+                            <label for="no_refer">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2" v-if="referralButton == 'yes'">
+                    <label class="text-[#0D0D3F] font-semibold" for="reach-goal">Referral's Email</label>
+                    <input v-model="referralEmail" class="transition duration-500 focus:border-[#0D0D3F] outline-none border py-2 placeholder:text-gray-400" type="email">
                 </div>
             </div>
             <div class="flex flex-col gap-4 mb-6" v-if="fieldPosition == 3" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out">

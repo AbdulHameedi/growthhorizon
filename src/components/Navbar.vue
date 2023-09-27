@@ -28,7 +28,7 @@
         </div>
 
 
-            <div  class="bg-cover bg-center relative" :class="currentIndex === 0 ?  `bg-[url(../assets/bg-image-2-2.webp)] ${navColor}` : currentIndex === 1 ? 'bg-[url(../assets/bg-image-2.webp)]' : 'bg-white'">
+            <div  class="bg-cover bg-center relative" :class="currentIndex === 0 ?  'bg-[url(../assets/bg-image-2-2.webp)]' : currentIndex === 1 ? 'bg-[url(../assets/bg-image-2.webp)]' : 'bg-white'">
                 <!-- MOBILE NAV -->
                     <div class="px-[5.5rem] lg:hidden max-[1312px]:px-[1rem] flex items-end justify-between py-8">
                         <div class="flex flex-col items-center w-fit relative">
@@ -84,33 +84,35 @@
                     </div>
     
                 <!-- DESKTOP NAV -->
-                <div class="hidden px-[5.5rem] max-[1312px]:px-[1rem] lg:flex items-center justify-between py-8">
-                    <div class="flex flex-col items-center w-fit cursor-pointer">
-                        <img src="../assets/logo.svg" width="25" alt="Logo">
-                        <p class="text-[#0D0D3F] text-xl font-bold">GrowthHorizon</p>
-                    </div>
-                    <nav class="flex items-center w-fit p-0 gap-6 z-[999]">
-                        <p @click="HomeActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onHomeActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Home</p>
-                        <div class="relative">
-                            <div @click="PagesActive()" class="flex items-center  font-semibold cursor-pointer text-lg lg:hover:text-[#0D0D3F]" :class="onPagesDropdownActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">
-                                <p :class="showPages ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Pages</p>
-                                <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#7F7F88" d="m12 10.8l-3.9 3.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.6-4.6q.3-.3.7-.3t.7.3l4.6 4.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 10.8Z"/></svg>
-                            </div>
-                            <div v-show="onPagesDropdownActive" class="shadow-xl bg-white w-[200px] px-4 py-4 rounded-[20px] space-y-2 absolute top-8">
-                                <p @click="AboutUsActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onAboutUsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">News</p>
-                                <p @click="ProcessActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onProcessActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">FAQs</p>
-                                <p @click="PlansActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onPlansActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Plans</p>
-                            </div>
+                <div :class="[navColor]">
+                    <div class="hidden px-[5.5rem] max-[1312px]:px-[1rem] lg:flex items-center justify-between py-8">
+                        <div class="flex flex-col items-center w-fit cursor-pointer">
+                            <img src="../assets/logo.svg" width="25" alt="Logo">
+                            <p class="text-[#0D0D3F] text-xl font-bold">GrowthHorizon</p>
                         </div>
-                        <a href="#about"><p @click="NewsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onNewsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">About us</p></a>
-                        <router-link to="/process"><p @click="FaqsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onFaqsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Process</p></router-link>
-                        <router-link to="/testimonial"><p @click="TestimonialsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onTestimonialActive ? 'text-[#0D0D3F] ' : ' text-[#7F7F88]'">Testimonials</p></router-link>
-                        <a href="#contact"><p @click="GetInTouchActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onGetInTouchActive ? 'text-[#0D0D3F] ' : ' text-[#7F7F88]'">Get in touch</p></a>
-                    </nav>
-                    <div class="hidden md:flex gap-4 items-center">
-                        <router-link to="/signup"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-transparent hover:text-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p></router-link>
-                        <p class="cursor-pointer border border-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold hover:bg-[#0D0D3F] hover:text-white">Sign in</p>
-                    </div>           
+                        <nav class="flex items-center w-fit p-0 gap-6 z-[999]">
+                            <router-link to="/"><p class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]"  :class="$route.path == '/' ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Home</p></router-link>
+                            <div class="relative">
+                                <div @click="PagesActive()" class="flex items-center  font-semibold cursor-pointer text-lg lg:hover:text-[#0D0D3F]" :class="onPagesDropdownActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">
+                                    <p :class="showPages ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Pages</p>
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#7F7F88" d="m12 10.8l-3.9 3.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.6-4.6q.3-.3.7-.3t.7.3l4.6 4.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 10.8Z"/></svg>
+                                </div>
+                                <div v-show="onPagesDropdownActive" class="shadow-xl bg-white w-[200px] px-4 py-4 rounded-[20px] space-y-2 absolute top-8">
+                                    <p @click="AboutUsActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onAboutUsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">News</p>
+                                    <p @click="ProcessActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onProcessActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">FAQs</p>
+                                    <p @click="PlansActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onPlansActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Plans</p>
+                                </div>
+                            </div>
+                            <a href="#about"><p @click="NewsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onNewsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">About us</p></a>
+                            <router-link to="/process"><p class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="$route.path == '/process' ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Process</p></router-link>
+                            <router-link to="/testimonial"><p class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="$route.path == '/testimonial' ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Testimonials</p></router-link>
+                            <a href="#contact"><p @click="GetInTouchActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onGetInTouchActive ? 'text-[#0D0D3F] ' : ' text-[#7F7F88]'">Get in touch</p></a>
+                        </nav>
+                        <div class="hidden md:flex gap-4 items-center">
+                            <router-link to="/signup"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-transparent hover:text-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p></router-link>
+                            <p class="cursor-pointer border border-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold hover:bg-[#0D0D3F] hover:text-white">Sign in</p>
+                        </div>           
+                    </div>
                 </div>
     
                 <!-- CHANGING TEXT -->

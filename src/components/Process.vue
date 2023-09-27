@@ -23,7 +23,7 @@ export default defineComponent({
 </script>
 <template>
     <section>
-        <Navbar display="hidden" navColor="bg-[url('../assets/bg-white.png')]"/>
+        <Navbar display="hidden" navColor="bg-white"/>
         <div class="bg-gradient-to-l from-[#0D0D3F] to-[#26486B]">
             <!-- bg-feature -->
             <div class="bg-feature bg-[url('../assets/featured-bg.webp')] bg-center h-[390px] flex flex-col gap-3 pl-20 justify-center text-white max-[1312px]:px-[1rem]">
@@ -65,6 +65,10 @@ export default defineComponent({
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 textwhite rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
+                            <p class="font-semibold">You <b>must</b> share the contents to Facebook and Instagram platform</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <p class="w-fit bg-green-300 text-[#28B79A] p-2 textwhite rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
                             <p class="font-semibold">Your facebook profile should be at least 1 year old</p>
                         </div>
                         <div class="flex gap-3 items-center">
@@ -73,11 +77,23 @@ export default defineComponent({
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
+                            <p class="font-semibold">Keep in touch with the notification panel in the Dashboard</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
                             <p class="font-semibold">N50.00 is earned per post</p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
+                            <p class="font-semibold">You <b>must</b> tag our media account for every content you upload in your social media account</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
                             <p class="font-semibold">Refer an advertiser and get N200.00 extra</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
+                            <p class="font-semibold">Your audience and availability in your social media accounts must be set to Friends of Friends</p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
@@ -118,7 +134,7 @@ export default defineComponent({
                         <router-link to="/signup"><button class="w-fit p-3 px-6 rounded-md border border-green-500 mt-8 transition duration-500 hover:bg-green-400 hover:text-white">Apply Now</button></router-link>
                     </div>
                     <div>
-                        <img class="w-full rounded-md h-full" src="../assets/offer-meeting.jpeg" alt="">
+                        <img class="w-full rounded-md h-full md:h-[80%]" src="../assets/offer-meeting.jpeg" alt="">
                     </div>
                 </div>
             </div>
