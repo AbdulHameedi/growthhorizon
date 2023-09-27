@@ -8,6 +8,7 @@ import Overview from '../components/Overview.vue'
 import Settings from '../components/Settings.vue'
 import Withdrawal from '../components/Withdrawal.vue'
 import Notification from '../components/Notification.vue'
+import SignInView from '../views/SignInView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: '/signup',
       name: 'Signup',
       component: SignupView
+    },
+    {
+      path: '/signin',
+      name: 'Signin',
+      component: SignInView
     },
     {
       path: '/process',
