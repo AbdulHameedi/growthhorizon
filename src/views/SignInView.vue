@@ -71,7 +71,7 @@
                         </div>
                         <svg @click="showChatSpace = false" class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="white" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"/></svg>
                     </div>
-                    <p class="text-white text-sm">Hello there 👋 We'd love to serve you someday</p>
+                    <p class="text-white text-sm">Hello there 👋 We would love to serve you someday</p>
                 </div>
                 <div class="h-[400px] bg-white relative">
                     <div class="w-[90%] shadow-xl space-y-6 bg-white absolute top-[-15px] rounded-lg mx-auto left-0 right-0 flex flex-col items-center py-4">
