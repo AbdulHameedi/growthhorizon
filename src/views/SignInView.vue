@@ -105,7 +105,7 @@
         methods:{
            async SignIn(){
 
-                let result = await axios.get(`https://dbgrowthhorizon.onrender.com/userSignup?email=${this.email}`)
+                let result = await axios.get(`https://dbgrowthhorizon.onrender.com/userSignin?email=${this.email}`)
                 {
                     if (result.status == 200 && result.data.length > 0) {
                          localStorage.setItem("user-info", JSON.stringify(result.data))   

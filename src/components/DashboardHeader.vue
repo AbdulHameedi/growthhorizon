@@ -9,7 +9,7 @@ export default defineComponent({
             notificationUpdate: true,
             userBox: false,
             mobileMenu: false,
-            userName: ''
+            userName: '',
             navOverlay: false,
             errorFeedback: false,
             feedback: ''
