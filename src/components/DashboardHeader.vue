@@ -8,7 +8,8 @@ export default defineComponent({
             notificationBox: false,
             notificationUpdate: true,
             userBox: false,
-            mobileMenu: false
+            mobileMenu: false,
+            userName: ''
         }
     },
     methods: {
@@ -27,6 +28,13 @@ export default defineComponent({
             this.feedbackBox = false;
             this.userBox =! this.userBox
         }
+    },
+    mounted(){
+        let user = localStorage.getItem('user-info');
+        this.userName = JSON.parse(user).email
+        if (!user) {
+            this.$router.push('/signin')
+        }
     }
 
 })
@@ -39,7 +47,7 @@ export default defineComponent({
             <!-- mobile-menu -->
             <div v-if="mobileMenu" class="p-5 absolute w-full top-[4rem] left-0 bottom-0 bg-white flex flex-col gap-3 text-gray-600">
                 <div class="flex justify-between border-b pb-4 items-center">
-                    <p>sanilinity507@gmail.com</p>
+                    <p>{{ userName }}</p>
                     <p class="w-fit p-1 bg-[#0D0D3F] text-white rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5.9a2.1 2.1 0 1 1 0 4.2a2.1 2.1 0 0 1 0-4.2m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/></svg></p>
                 </div>
                 <p class="pb-4 border-b">Change Password</p>
@@ -103,7 +111,7 @@ export default defineComponent({
                     <div class="relative max-[570px]:hidden">
                         <p @click="userBoxFunc" class="w-fit p-1 bg-[#0D0D3F] text-white rounded-[50%] border hover:bg-white hover:border hover:text-[#0D0D3F] transition duration-200"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5.9a2.1 2.1 0 1 1 0 4.2a2.1 2.1 0 0 1 0-4.2m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/></svg></p>
                         <div v-if="userBox" class="py-5 text-gray-600 absolute shadow-md top-10 bg-white rounded-md right-0 w-[250px]">
-                            <p class="pb-2 px-3">sanilinity507@gmail.com</p>
+                            <p class="pb-2 px-3">{{ userName }}</p>
                             <router-link to="/dashboard/settings"><p @click="userBox = false" class="hover:bg-gray-100 cursor-pointer p-2 px-3">Change Password</p></router-link>
                             <router-link to="/dashboard/settings">
                             <div @click="userBox = false" class="flex items-center justify-between hover:bg-gray-100 cursor-pointer p-2 px-3">

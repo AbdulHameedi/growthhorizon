@@ -73,7 +73,7 @@ export default defineComponent({
                 </div>
             </div>
             <div class="px-8 max-[968px]:px-4 py-4">
-                <p class="text-[#0D0D3F] text-sm font-semibold">Already own an account? <span class="text-[#28B79A] cursor-pointer hover:underline">Sign in</span></p>
+                <p class="text-[#0D0D3F] text-sm font-semibold">Already own an account? <router-link to="/signin" class="text-[#28B79A] cursor-pointer hover:underline">Sign in</router-link></p>
             </div>
         </div>
     </div>

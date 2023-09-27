@@ -87,7 +87,7 @@
         
                 <div class="hidden md:flex gap-4 items-center">
                     <router-link to="/signup"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-transparent hover:text-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p></router-link>
-                    <p class="cursor-pointer border border-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold hover:bg-[#0D0D3F] hover:text-white">Sign in</p>
+                    <router-link to="/signin"><p class="cursor-pointer border border-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold hover:bg-[#0D0D3F] hover:text-white">Sign in</p></router-link>
                 </div>
                 <!-- hamburger icon -->
                 <div @click="showNavs = true" class="lg:hidden block cursor-pointer">
@@ -132,7 +132,7 @@
         
                 <div class="hidden md:flex gap-4 items-center">
                     <router-link to="/signup"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-transparent hover:text-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p></router-link>
-                    <p class="cursor-pointer border border-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold hover:bg-[#0D0D3F] hover:text-white">Sign in</p>
+                    <router-link to="/signin"><p class="cursor-pointer border border-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold hover:bg-[#0D0D3F] hover:text-white">Sign in</p></router-link>
                 </div>           
             </div>
 
