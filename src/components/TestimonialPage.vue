@@ -2,18 +2,21 @@
 import { defineComponent } from 'vue'
 import TestimonialCard from './TestimonialCard.vue';
 import RegisterFooter from './RegisterFooter.vue';
-import Footer from './Footer.vue'
+import Footer from './Footer.vue';
+import Navbar from './Navbar.vue';
 
 export default defineComponent({
     components: {
         TestimonialCard,
         RegisterFooter,
         Footer,
+        Navbar
     }
 })
 </script>   
 <template>
     <section>
+        <Navbar display="hidden" navColor="bg-white"/>
         <div class="bg-[url('../assets/bg-section.jpg')] bg-center">
             <div class="bg-feature bg-[url('../assets/featured-bg.webp')] bg-center h-[390px] flex flex-col gap-3 pl-20 justify-center text-white max-[1312px]:px-[1rem]">
                 <h2 class="font-bold text-5xl max-[541px]:text-4xl max-[375px]:text-3xl">Discover the impact of Growth Horizon</h2>
