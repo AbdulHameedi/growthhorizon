@@ -43,6 +43,14 @@ const router = createRouter({
       path: '/dashboard',
       name: 'Dashboard',
       component: DashboardView,
+      beforeEnter: (to, from, next) => {
+        const user = localStorage.getItem("user-info");
+        if (!user) {
+          next('/signin'); 
+        } else {
+          next(); 
+        }
+      },
       children: [
         {
           path: '',

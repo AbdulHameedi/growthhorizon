@@ -22,7 +22,7 @@ export default defineComponent({
                 this.copied = false;
             },2000 );
         }
-    }
+    },
 })
 </script>
 <template>

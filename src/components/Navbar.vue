@@ -8,7 +8,7 @@
                 </div>
                 <div class="flex gap-[4px] items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#27B296" d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.313t.1-.412q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037Z"/></svg>
-                    <p class="text-white font-semibold"><a href="mailto:luqmanola60@gmail.com">needourhelp@gmail.com</a></p>
+                    <p class="text-white font-semibold"><a href="mailto:contact.growthhorizon@gmail.com">contact.growthhorizon@gmail.com</a></p>
                 </div>
             </div>
             <div class="flex gap-4">
@@ -42,7 +42,6 @@
                             <div @click="showNavs = false" class="absolute top-6 right-6 w-fit cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="white" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
                             </div>
-            
                             <div class="flex flex-col items-center w-fit">
                                 <img src="../assets/logo.svg" width="25" alt="Logo">
                                 <p class="text-white text-xl font-bold">GrowthHorizon</p>
@@ -66,7 +65,7 @@
                             <p @click="GetInTouchActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onGetInTouchActive ? 'text-white' : 'text-white'">Get in touch</p>
                             <div class="lg:hidden flex gap-4 items-center">
                                 <router-link to="/signup"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-white hover:text-[#0D0D3F] py-2 md:px-6 px-4 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p></router-link>
-                                <p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-white hover:text-[#0D0D3F] py-2 md:px-6 px-4 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign in</p>
+                                <router-link to="/signin"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-white hover:text-[#0D0D3F] py-2 md:px-6 px-4 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign in</p></router-link>
                             </div>
                             <p class="lg:hidden block text-white font-semibold">At Growth Horizon, Our Vision is to empower users to turn their online presence into a valuable asset, while providing businesses with a trusted platform to promote and grow</p>
                             <div class="lg:hidden flex items-center gap-2 text-white">

@@ -28,6 +28,12 @@ export default defineComponent({
     OurOffer,
     OurVisionAndMission
 },
+mounted(){
+  let user = localStorage.getItem("user-info");
+  if(user){
+    this.$router.push('/dashboard')
+  }
+}
 })
 </script>
 <template>

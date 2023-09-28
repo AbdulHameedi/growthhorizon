@@ -31,7 +31,7 @@ export default defineComponent({
           <div class="flex justify-between items-center py-10 border-b border-gray-700 max-[892px]:justify-center">
             <div class="flex items-center gap-4 max-[892px]:hidden">
                 <svg class="text-[#2E3AA5]" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 16 16"><path fill="currentColor" d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267l.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15l-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6l-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z"/></svg>
-                <p class="text-white font-semibold text-xl">growthhorizon@gmail.com</p>
+                <p class="text-white font-semibold text-xl">contact.growthhorizon@gmail.com</p>
             </div>
             <div class="flex flex-col items-center">
                 <img src="../assets/logo.svg" width="25px" height="25px" alt="">
@@ -67,12 +67,12 @@ export default defineComponent({
             <div>
               <p class="text-white text-2xl font-semibold mb-4">Gallery</p>
               <div class="grid grid-cols-3 gap-2">
-                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news04-370x320.webp" alt="">
-                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news04-370x320.webp" alt="">
-                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news03-370x320.webp" alt="">
-                <img class="rounded-md w-[75px] h-[70px]" src="../assets/business-insurance.webp" alt="">
-                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news03-370x320.webp" alt="">
-                <img class="rounded-md w-[75px] h-[70px]" src="../assets/business-insurance.webp" alt="">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news04-370x320.webp" alt="news-1">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news04-370x320.webp" alt="news-2">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news03-370x320.webp" alt="news-3">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/business-insurance.webp" alt="business-1">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/news03-370x320.webp" alt="news-4">
+                <img class="rounded-md w-[75px] h-[70px]" src="../assets/business-insurance.webp" alt="business-2">
               </div>
             </div>
             <div>

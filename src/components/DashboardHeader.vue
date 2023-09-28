@@ -12,7 +12,8 @@ export default defineComponent({
             userName: '',
             navOverlay: false,
             errorFeedback: false,
-            feedback: ''
+            feedback: '',
+            dynamicEmail: ''
         }
     },
     methods: {
@@ -42,6 +43,11 @@ export default defineComponent({
             }else{
                 alert('Feedback')
             }
+        },
+        logOut(){
+            localStorage.getItem("user-info");
+            localStorage.clear();
+            this.$router.push('/')
         }
     },
     watch: {
@@ -52,11 +58,8 @@ export default defineComponent({
         }
     },
     mounted(){
-        let user = localStorage.getItem('user-info');
-        this.userName = JSON.parse(user).email
-        if (!user) {
-            this.$router.push('/signin')
-        }
+        let user = localStorage.getItem("user-info");
+        this.dynamicEmail = JSON.parse(user).email;
     }
 
 })
@@ -70,14 +73,14 @@ export default defineComponent({
             <p @click="navOverlayFunc" v-if="navOverlay" class="z-20 max-[570px]:block fixed bottom-0 w-full top-0 left-0"></p>
 
             <!-- mobile-menu -->
-            <div v-if="mobileMenu" class="p-5 fixed w-full top-[4rem] left-0 bottom-0 bg-white flex flex-col gap-3 text-gray-600">
+            <div v-if="mobileMenu" class="min-[571px]:hidden p-5 fixed w-full top-[4rem] left-0 bottom-0 bg-white flex flex-col gap-3 text-gray-600">
                 <div class="flex justify-between border-b pb-4 items-center">
-                    <p>{{ userName }}</p>
+                    <p>{{ dynamicEmail }}</p>
                     <p class="w-fit p-1 bg-[#0D0D3F] text-white rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5.9a2.1 2.1 0 1 1 0 4.2a2.1 2.1 0 0 1 0-4.2m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/></svg></p>
                 </div>
                 <p class="pb-4 border-b">Change Password</p>
                 <router-link to="/dashboard/settings"><p @click="mobileMenu = false" class="pb-4 border-b">Settings</p></router-link>
-                <p class="py-3 bg-[#0D0D3F] w-full rounded-md text-white text-center mt-3">Log Out</p>
+                <p class="py-3 bg-[#0D0D3F] hover:bg-[#1e1e5a] w-full rounded-md text-white text-center mt-3" @click="logOut">Log Out</p>
             </div>
 
             <!--  -->
@@ -95,7 +98,7 @@ export default defineComponent({
                                 <p v-if="errorFeedback" class="text-sm text-red-500 italic">This field is required</p>
                             </div>
                             <div class="p-2 h-[25%] bg-gray-100 flex justify-end">
-                                <button @click="submitFeedback" class="w-fit bg-[#0D0D3F] rounded-md text-white p-1 px-3">Send</button>
+                                <button @click="submitFeedback" class="w-fit bg-[#0D0D3F] hover:bg-[#1e1e5a] rounded-md text-white p-1 px-3">Send</button>
                             </div>
                         </div>
                     </div>
@@ -137,8 +140,8 @@ export default defineComponent({
                     <div class="relative max-[570px]:hidden">
                         <p @click="userBoxFunc" class="w-fit p-1 bg-[#0D0D3F] text-white rounded-[50%] border hover:bg-white hover:border hover:text-[#0D0D3F] transition duration-200"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5.9a2.1 2.1 0 1 1 0 4.2a2.1 2.1 0 0 1 0-4.2m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/></svg></p>
 
-                        <div v-if="userBox" class="py-5 text-gray-600 absolute shadow-md top-10 bg-white rounded-md right-0 w-[250px]">
-                            <p class="pb-2 px-3">{{ userName }}</p>
+                        <div v-if="userBox" class="py-5 text-gray-600 absolute shadow-md top-10 bg-white rounded-md right-0 w-[250px] z-20">
+                            <p class="pb-2 px-3">{{ dynamicEmail }}</p>
                             
                             <router-link to="/dashboard/settings"><p @click="userBox = false" class="hover:bg-gray-100 cursor-pointer p-2 px-3">Change Password</p></router-link>
                             <router-link to="/dashboard/settings">
@@ -147,8 +150,8 @@ export default defineComponent({
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24"><path fill="currentColor" d="M19.14 12.94c.04-.3.06-.61.06-.94c0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6s3.6 1.62 3.6 3.6s-1.62 3.6-3.6 3.6z"/></svg>
                             </div>
                             </router-link>
-                            <div class="px-3 text-center mt-3 cursor-pointer">
-                                <p class="w-full bg-lo bg-[#0D0D3F] hover:bg-[#1e1e5a] rounded-md p-1 text-white">Log Out</p>
+                            <div class="px-3 text-center mt-3 cursor-pointer" @click="logOut">
+                                <p class="w-full bg-[#0D0D3F] hover:bg-[#1e1e5a] rounded-md p-1 text-white">Log Out</p>
                             </div>
                         </div>
                     </div>

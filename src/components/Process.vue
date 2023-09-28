@@ -116,6 +116,18 @@ export default defineComponent({
                             <p class="font-semibold">Payments should be made prior to filling the signup data</p>
                         </div>
                         <div class="flex gap-3 items-center">
+                            <p class="w-fit bg-green-300 text-[#28B79A] p-2 textwhite rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
+                            <p class="font-semibold">Certainly, below is the pricing information for your ads presented clearly</p>
+                        </div>
+                         <div class="flex gap-3 items-center">
+                            <p class="w-fit bg-green-300 text-[#28B79A] p-2 textwhite rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
+                            <p class="font-semibold"><b>3 Days</b>- N3000, <b>5 Days</b>- N5000, <b>1 Week</b>- N8000,</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <p class="w-fit bg-green-300 text-[#28B79A] p-2 textwhite rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
+                            <p class="font-semibold">Feel free to send a mail to us if you prefer custom options for the pricing</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
                             <p class="font-semibold">The link field should be an available link online to the ad(s) you desire to grow</p>
                         </div>
@@ -125,11 +137,15 @@ export default defineComponent({
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">Must be between the ages </p>
+                            <p class="font-semibold">Kindly make payment to the account provided below</p>
                         </div>
                         <div class="flex gap-3 items-center">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">Must be between the ages of 16 and 40 </p>
+                            <p class="font-semibold">We'll get in touch with you as your audiene grow and we'll appreciate your feedback</p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
+                            <p class="font-semibold">You may wish to discover our satisfied clients  on the testimonials page</p>
                         </div>
                         <router-link to="/signup"><button class="w-fit p-3 px-6 rounded-md border border-green-500 mt-8 transition duration-500 hover:bg-green-400 hover:text-white">Apply Now</button></router-link>
                     </div>
