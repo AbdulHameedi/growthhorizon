@@ -21,7 +21,7 @@ export default defineComponent({
             bankAcctName: '',
             bankAcctType: '',
             loading: false,
-            usedFacebook: false,
+            usedFacebookInstagram: false,
             usedInstagram: false,
             facebookPass: false,
             instagramPass: false
@@ -95,29 +95,24 @@ export default defineComponent({
                     let getInstagram = await axios.get(
                     `https://dbgrowthhorizon.onrender.com/withdrawal?instagram=${this.instagram}`
                     )
-                    if(getResult.status == 200 && getResult.data.length > 0){
-                        this.usedFacebook = true
+                    if(getResult.status == 200 && getResult.data.length > 0 || getInstagram.status == 200 && getInstagram.data.length > 0){
+                        this.usedFacebookInstagram = true
                         this.loading = false
                     }else{
-                        this.facebookPass = true
-                    }
-                    if(getInstagram.status == 200 && getInstagram.data.length > 0){
-                        this.usedInstagram = true
-                        this.loading = false
-                    }else{
-                        this.instagramPass = true
-                    }
-                    // post request set
-                    if(this.facebookPass && this.instagramPass){
-                        this.loading = false
-                        // this.username = ''
-                        // this.email = ''
-                        // this.instagram = ''
-                        // this.facebook = ''
-                        // this.bankAcctNum = ''
-                        // this.bankAcctName = ''
-                        // this.bankAcctType = ''
-                        alert('Done')
+                        this.loading = true
+                        let resultPost = await axios.post("https://dbgrowthhorizon.onrender.com/withdrawal" , {
+                            username: this.username,
+                            email: this.email,
+                            facebook: this.facebook,
+                            instagram: this.instagram,
+                            acctNum: this.bankAcctNum,
+                            acctName: this.bankAcctName,
+                            acctType: this.bankAcctType
+                        })
+                        if(resultPost.status == 201){
+                            this.loading = false
+                            this.$router.push('/dashboard')
+                        }
                     }
             }
         }
@@ -157,16 +152,6 @@ export default defineComponent({
             if(value !== ''){
                 this.errorBankAcctName = false
             }
-        },
-        facebookPass(){
-            if(this.facebookPass){
-                this.usedFacebook = false
-            }
-        },
-        instagramPass(){
-            if(this.instagramPass){
-                this.usedInstagram = false
-            }
         }
     }
 })
@@ -195,15 +180,14 @@ export default defineComponent({
                         <label for="fb_link" class="font-semibold text-[#0D0D3F]">Facebook Link</label>
                         <input v-model="facebook" placeholder="https://web.facebook.com/profile.php?id=11222" class="p-2 rounded-md outline-none border focus:border-[#0D0D3F]" type="text" id="fb_link">
                         <p v-if="errorFacebook" class="text-sm text-red-500 italic">This field is required</p>
-                        <p v-if="usedFacebook" class="text-sm text-red-500 italic">This link has beeen used</p>
                     </div>
                     <div class="flex flex-col gap-2">
                         <label for="ig_link" class="font-semibold text-[#0D0D3F]">Instagram Link</label>
                         <input v-model="instagram" placeholder="https://web.instagram.com/profile.php?id=11222" class="p-2 rounded-md outline-none border focus:border-[#0D0D3F]" type="text" id="ig_link">
                         <p v-if="errorInstagram" class="text-sm text-red-500 italic">This field is required</p>
-                        <p v-if="usedInstagram" class="text-sm text-red-500 italic">This link has beeen used</p>
                     </div>
                 </div>
+                <p v-if="usedFacebookInstagram" class="text-sm text-red-500 italic bg-red-100 p-1 w-full">The social media link has beeen used</p>
                 <div class="grid grid-cols-2 max-[557px]:grid-cols-1 gap-5">
                     <div class="flex flex-col gap-2">
                         <label for="acct_num" class="font-semibold text-[#0D0D3F]">Bank Acccount Number</label>
