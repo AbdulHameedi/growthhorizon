@@ -81,7 +81,7 @@ export default defineComponent({
                         </div>
                         <div class="flex gap-3 items-start">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold">N50.00 is earned per post</p>
+                            <p class="font-semibold">N40.00 is earned per post</p>
                         </div>
                         <div class="flex gap-3 items-start">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
@@ -121,7 +121,7 @@ export default defineComponent({
                         </div>
                          <div class="flex gap-3 items-start">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 textwhite rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
-                            <p class="font-semibold"><em>3 Days</em>- N3000, <em>5 Days</em>- N5000, <em>1 Week</em>- N8000,</p>
+                            <p class="font-semibold"><em>3 Days</em>- N2000, <em>5 Days</em>- N3500, <em>1 Week</em>- N5000,</p>
                         </div>
                         <div class="flex gap-3 items-start">
                             <p class="w-fit bg-green-300 text-[#28B79A] p-2 textwhite rounded-[50%]"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m4 24l5-5l10 10L39 9l5 5l-25 25L4 24Z" clip-rule="evenodd"/></svg></p>
