@@ -189,7 +189,7 @@ export default defineComponent({
                                 v-model="processes"
                                 type="checkbox"
                                 id="checkbox">
-                            <label for="checkbox" class="text-[#0D0D3F] font-semibold">I have read the <span class="hover:underline">processes</span></label>
+                            <label for="checkbox" class="text-[#0D0D3F] font-semibold">I have read the <router-link to="/process"><span class="hover:underline text-green-600">processes</span></router-link></label>
                         </div>
                         <small class="text-red-500 italic" v-if="errorProcesses">Processes must be read</small>
                     </div>
