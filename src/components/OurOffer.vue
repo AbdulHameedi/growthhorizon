@@ -6,7 +6,7 @@
                     <p class="text-[#7F7F88] uppercase font-semibold">What we're offering</p>
                 </div>
                 <p class="text-[#0D0D3F] font-bold text-5xl leading-20 max-[499px]:text-3xl text-center">Providing all the services <br> you need</p>
-            </div>
+        </div>
 
         <div class="grid grid-cols-3 max-[1180px]:grid-cols-2 gap-8 max-[1074px]:px-[50px] max-[600px]:px-[20px] max-[460px]:grid-cols-1 px-[100px]">
             <div class="background h-[294px] relative">
@@ -80,9 +80,9 @@
                             <svg class="max-[560px]:w-[70px]" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path fill="white" d="M12.025 21.025q-3.425 0-5.725-2.475T4 12.725V5.5q0-.825.588-1.413Q5.175 3.5 6 3.5h12q.825 0 1.413.587Q20 4.675 20 5.5v1.75q0 .4-.15.762q-.15.363-.425.638l-5.775 5.775q-.575.575-1.412.575q-.838 0-1.413-.575L8 11.6l1.4-1.425L12.25 13L18 7.25V5.5H6v7.3q0 2.55 1.725 4.375Q9.45 19 12.025 19q2.5 0 4.237-1.75Q18 15.5 18 13h2q0 3.35-2.312 5.688q-2.313 2.337-5.663 2.337Z"/></svg>
                             <p class="text-3xl text-white font-bold max-[411px]:text-2xl max-[343px]:text-xl">Compare & earn in the right way right away</p>
                         </div>
-                        <p class="text-[#B2B3C4] text-lg">Lorem ipsum dolor sit amet.</p>
+                        <p class="text-[#B2B3C4] text-lg">Trust and Professionalism in our Services</p>
                     </div>
-                    <p class="bg-[#28B79A] text-white px-8 py-2 w-fit rounded-md hover:bg-white hover:text-[#0D0D3F] transition-all cursor-pointer duration-700 font-semibold">Get a Quote</p>
+                    <router-link to="/signup"><p class="bg-[#28B79A] text-white px-8 py-2 w-fit rounded-md hover:bg-white hover:text-[#0D0D3F] transition-all cursor-pointer duration-700 font-semibold">Get Started</p></router-link>
                 </div>
             </div>
         </div>

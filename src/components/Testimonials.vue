@@ -30,7 +30,7 @@ export default defineComponent({
 })
 </script>
 <template>
-    <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out" class="grid grid-cols-2 bg-[#EDEDF4] pt-[18rem] pb-[4rem] max-[1096px]:grid-cols-1">
+    <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="200"  data-aos-easing="ease-in-out" class="grid grid-cols-2 bg-[#EDEDF4]  py-[4rem] pt-[6rem] max-[1096px]:grid-cols-1">
         <div class="relative bg-[url('../assets/lines.webp') bg-left bg-no-repeat h-[500px]  max-[425px]:h-[300px]">
             <img class="rounded-[50%] max-[425px]:w-[150px] max-[610px]:w-[300px] absolute top-[10%] left-[20%] z-20" src="../assets/a1.webp" alt="">
             <img class="rounded-[50%] max-[425px]:w-[100px] max-[610px]:w-[200px] absolute left-[50%] top-0" src="../assets/a2.webp" alt="">
