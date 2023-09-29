@@ -5,7 +5,7 @@ import axios from 'axios';
 export default defineComponent({
     data(){
         return{
-            withdrawalForm: true,
+            withdrawalForm: false,
             errorUsername: false,
             errorEmail: false,
             errorFacebook: false,

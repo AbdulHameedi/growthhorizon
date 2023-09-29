@@ -4,7 +4,7 @@ export default defineComponent({
     data(){
         return{
             copied: false,
-            contentAvailable: true
+            contentAvailable: false
         }
     },
     methods: {
