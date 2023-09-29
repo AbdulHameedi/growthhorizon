@@ -28,7 +28,7 @@
         </div>
 
 
-            <div  class="bg-cover bg-center relative z-[999]" :class="currentIndex === 0 ?  'bg-[url(../assets/bg-image-2-2.webp)]' : currentIndex === 1 ? 'bg-[url(../assets/bg-image-2.webp)]' : 'bg-white'">
+            <div  class="bg-cover bg-center relative" :class="currentIndex === 0 ?  'bg-[url(../assets/bg-image-2-2.webp)]' : currentIndex === 1 ? 'bg-[url(../assets/bg-image-2.webp)]' : 'bg-white'">
                 <!-- MOBILE NAV -->
                 <div :class="[navColor]">
                     <div class="px-[5.5rem] lg:hidden max-[1312px]:px-[1rem] flex items-end justify-between py-8">
