@@ -26,11 +26,8 @@
                 </div>
             </div>
         </div>
-
-
-            <div  class="bg-cover bg-center relative z-[999]" :class="currentIndex === 0 ?  'bg-[url(../assets/bg-image-2-2.webp)]' : currentIndex === 1 ? 'bg-[url(../assets/bg-image-2.webp)]' : 'bg-white'">
-                <!-- MOBILE NAV -->
-                <div :class="[navColor]">
+        <!-- MOBILE NAV -->
+        <div :class="[navColor]">
                     <div class="px-[5.5rem] lg:hidden max-[1312px]:px-[1rem] flex items-end justify-between py-8">
                         <router-link to="/">
                             <div class="flex flex-col items-center w-fit relative">
@@ -38,16 +35,18 @@
                                 <p class="text-[#0D0D3F] text-xl font-bold">GrowthHorizon</p>
                             </div>
                         </router-link>
-                        <nav class="fixed top-0 bg-[#0D0D3F] w-[90%] h-screen md:p-16 p-6 space-y-6 overflow-y-auto z-[999] transition-right duration-700" :class="!showNavs ? 'right-[-1500px]' : 'right-0'">
+                        <nav class="fixed z-[999] flex flex-col top-0 bg-[#0D0D3F] w-[90%] h-screen md:p-16 p-6 space-y-6 overflow-y-auto transition-right duration-700" :class="!showNavs ? 'right-[-1500px]' : 'right-0'">
                             <div @click="showNavs = false" class="absolute top-6 right-6 w-fit cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="white" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
                             </div>
-                            <div class="flex flex-col items-center w-fit">
-                                <img src="../assets/logo.svg" width="25" alt="Logo">
-                                <p class="text-white text-xl font-bold">GrowthHorizon</p>
-                            </div>
-                            <p @click="HomeActive()" class="py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg text-white">Home</p>
-                            <div class="">
+                            <router-link to="/">
+                                <div class="flex flex-col items-center w-fit">
+                                    <img src="../assets/logo.svg" width="25" alt="Logo">
+                                    <p class="text-white text-xl font-bold">GrowthHorizon</p>
+                                </div>
+                            </router-link>
+                            <router-link to="/"><p @click="HomeActive()" class="py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg text-white">Home</p></router-link>
+                            <!-- <div class="">
                                     <div @click="PagesActive()" class="flex items-center py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg lg:hover:text-[#0D0D3F]">
                                         <p class="text-white">Pages</p>
                                         <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#7F7F88" d="m12 10.8l-3.9 3.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.6-4.6q.3-.3.7-.3t.7.3l4.6 4.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 10.8Z"/></svg>
@@ -58,11 +57,11 @@
                                         <router-link to="/process"><p @click="ProcessActive()" class="p-4 font-semibold py-2 border-b border-[#7F7F88] cursor-pointer text-lg text-white">Process</p></router-link>
                                         <p @click="PlansActive()" class="p-4 font-semibold py-2 border-b border-[#7F7F88] cursor-pointer text-lg text-white">Plans</p>
                                     </div>
-                            </div>
-                            <a href="#about"><p @click="NewsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onNewsActive ? 'text-white' : 'text-white'">About us</p></a>
+                            </div> -->
+                            <a href="/#about"><p @click="NewsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onNewsActive ? 'text-white' : 'text-white'">About us</p></a>
                             <router-link to="/process"><p @click="FaqsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onFaqsActive ? 'text-white' : 'text-white'">Process</p></router-link>
                             <router-link to="/testimonial"><p @click="TestimonialsActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onTestimonialActive ? 'text-white' : 'text-white'">Testimonials</p></router-link>
-                            <p @click="GetInTouchActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onGetInTouchActive ? 'text-white' : 'text-white'">Get in touch</p>
+                            <a href="/#contact"><p @click="GetInTouchActive()" class=" py-2 border-b border-[#7F7F88] font-semibold cursor-pointer text-lg" :class="onGetInTouchActive ? 'text-white' : 'text-white'">Get in touch</p></a>
                             <div class="lg:hidden flex gap-4 items-center">
                                 <router-link to="/signup"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-white hover:text-[#0D0D3F] py-2 md:px-6 px-4 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p></router-link>
                                 <router-link to="/signin"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-white hover:text-[#0D0D3F] py-2 md:px-6 px-4 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign in</p></router-link>
@@ -85,6 +84,7 @@
                         </div>
                     </div>
                 </div>
+            <div  class="bg-cover bg-center relative z-[800]" :class="currentIndex === 0 ?  'bg-[url(../assets/bg-image-2-2.webp)]' : currentIndex === 1 ? 'bg-[url(../assets/bg-image-2.webp)]' : 'bg-white'">
     
                 <!-- DESKTOP NAV -->
                 <div :class="[navColor]">
@@ -97,7 +97,7 @@
                         </router-link>
                         <nav class="flex items-center w-fit p-0 gap-6 z-[999]">
                             <router-link to="/"><p class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]"  :class="$route.path == '/' ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Home</p></router-link>
-                            <div class="relative">
+                            <!-- <div class="relative">
                                 <div @click="PagesActive()" class="flex items-center  font-semibold cursor-pointer text-lg lg:hover:text-[#0D0D3F]" :class="onPagesDropdownActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">
                                     <p :class="showPages ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Pages</p>
                                     <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#7F7F88" d="m12 10.8l-3.9 3.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.6-4.6q.3-.3.7-.3t.7.3l4.6 4.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 10.8Z"/></svg>
@@ -107,11 +107,11 @@
                                     <p @click="ProcessActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onProcessActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">FAQs</p>
                                     <p @click="PlansActive()" class="p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F] " :class="onPlansActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Plans</p>
                                 </div>
-                            </div>
-                            <a href="#about"><p @click="NewsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onNewsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">About us</p></a>
+                            </div> -->
+                            <a href="/#about"><p @click="NewsActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onNewsActive ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">About us</p></a>
                             <router-link to="/process"><p class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="$route.path == '/process' ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Process</p></router-link>
                             <router-link to="/testimonial"><p class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="$route.path == '/testimonial' ? 'text-[#0D0D3F]' : 'text-[#7F7F88]'">Testimonials</p></router-link>
-                            <a href="#contact"><p @click="GetInTouchActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onGetInTouchActive ? 'text-[#0D0D3F] ' : ' text-[#7F7F88]'">Get in touch</p></a>
+                            <a href="/#contact"><p @click="GetInTouchActive()" class="border-none p-0 font-semibold cursor-pointer text-lg hover:text-[#0D0D3F]" :class="onGetInTouchActive ? 'text-[#0D0D3F] ' : ' text-[#7F7F88]'">Get in touch</p></a>
                         </nav>
                         <div class="hidden md:flex gap-4 items-center">
                             <router-link to="/signup"><p class="cursor-pointer border hover:border-[#0D0D3F] hover:bg-transparent hover:text-[#0D0D3F] py-2 px-6 rounded-[10px] font-semibold bg-[#0D0D3F] text-white">Sign up</p></router-link>
@@ -142,7 +142,7 @@
 
 
     <!-- cover -->
-    <div v-show="showNavs" @click="showNavs = false" class="w-full h-screen bg-black opacity-50 fixed top-0 z-[900]"></div>
+    <div v-show="showNavs" @click="showNavs = false" class="w-full lg:hidden block h-screen bg-black opacity-50 fixed top-0 z-[900]"></div>
     <div v-show="onPagesDropdownActive" @click="onPagesDropdownActive = false" class="w-full h-screen fixed top-0 z-[900]"></div>
 </template>
 

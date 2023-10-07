@@ -38,7 +38,7 @@ mounted(){
 </script>
 <template>
   <Navbar id="top"/>
-  <HeroSection />
+  <HeroSection class="relative z-[800]"/>
   <AboutCompany />
   <OurOffer />
   <OurVisionAndMission />

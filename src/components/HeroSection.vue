@@ -1,5 +1,5 @@
 <template>
-    <div class="carousel">
+    <div class="">
         <div class="grid lg:grid-cols-3 md:grid-cols-2 w-fit mx-auto gap-6 border-b pb-20">
           <div class="about-summary cursor-pointer bg-[url(../assets/about-summary-1.webp)] bg-center bg-cover h-[260px] w-[370px] mt-[-30px] mx-auto relative overflow-hidden rounded-lg">
           <div class="green-ball z-[300] absolute bg-[#28AA9A] opacity-[0.9] w-[200px] h-[200px] bottom-[-120px] left-[-90px] rounded-[50%] transition-all duration-700">
